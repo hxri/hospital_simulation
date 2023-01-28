@@ -586,7 +586,7 @@ for i in range(len(init.index)):
     services = ['R', 'C', 'B', 'PB', 'D', 'S', 'X', 'I', 'P']
     visits = [num_registration, num_consultation, num_billing, num_pharmacy_billing, num_dressing, num_scan, num_xray, num_injection, num_pharmacy]
     plot_visits(services, visits, path, 'num_visits_per_service.png')
-    np.savetxt(path + 'visits_per_service', visits)
+    np.savetxt(path + 'visits_per_service.txt', visits)
 
     with open(path + 'flow_data.json', 'w') as fp:
         json.dump(flow, fp)

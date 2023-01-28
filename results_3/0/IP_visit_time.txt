@@ -1,0 +1,15 @@
+Patient 33 arrived at 10:24:47 AM
+Patient 34 arrived at 10:40:32 AM
+Patient 35 arrived at 10:40:32 AM
+Patient 36 arrived at 10:58:29 AM
+Patient 37 arrived at 11:21:37 AM
+Patient 38 arrived at 11:28:36 AM
+Patient 39 arrived at 11:42:29 AM
+Patient 40 arrived at 12:13:05 PM
+Patient 41 arrived at 12:42:57 PM
+Patient 42 arrived at 13:01:56 PM
+Patient 43 arrived at 13:21:17 PM
+Patient 44 arrived at 13:42:55 PM
+Patient 45 arrived at 13:51:48 PM
+Patient 46 arrived at 13:54:05 PM
+Patient 47 arrived at 14:08:27 PM
