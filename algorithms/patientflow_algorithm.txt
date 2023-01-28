@@ -1,0 +1,14 @@
+1. Define a function called "patient_flow" that takes in the following parameters: env, doctors, registration, xray, scan, dressing, injection, pharmacy, billing, and patient.
+2. Initialize a variable called "patient_type" and set it equal to the result of calling the "p_type()" function.
+3. Initialize a variable called "total_wait_time" and set it equal to 0.
+4. Initialize a variable called "s_time" and set it equal to the current time from the env.
+5. Create a new key in the "flow" dictionary for the current patient and set its value as an empty dictionary.
+6. Print out the patient's type using the patient variable.
+7. Initialize variables "d0", "d1", and "d2" and set them equal to the results of calling the "NewOP_decision()", "OldOP_decision()", and "oldOP_scan_decision()" functions respectively.
+8. Use an if-elif statement to check the value of "patient_type". If it is equal to "NewOP", continue to step 9. If it is equal to "OldOP", go to step 13. If it is equal to "OldOP_scan", go to step 16.
+9. Use another if-elif statement to check the value of "d0". If it is equal to 0, continue to step 10. If it is equal to 1, go to step 11. If it is equal to 2, go to step 12. If it is equal to 3, go to step 12. If it is equal to 4, go to step 12. If it is equal to 5, go to step 12. If it is equal to 6, go to step 12. If it is equal to 7, go to step 12. If it is equal to 8, go to step 12.
+10. Use the "yield env.process" method to call the "registration_process", "consultation", "billing_process", "xray_process", "consultation", "billing_process", "pharmacy_process", and "dressing_process" functions in that order, passing in the appropriate parameters. Add the result of each function call to "total_wait_time".
+11. Print out that the patient left the hospital and the time they left.
+12. Use the "yield env.process" method to call the "registration_process", "consultation", and "billing_process" functions in that order, passing in the appropriate parameters. Add the result of each function call to "total_wait_time". Then use the "yield env.process" method to call the "pharmacy_process" and "dressing_process" functions in that order, passing in the appropriate parameters. Add the result of each function call to "total_wait_time" (if d0 is equal to 2 or 3, do not call the "pharmacy_process" function again).
+13. Use another if-elif statement to check the value of "d1". If it is equal to 0, continue to step 14. If it is equal to 1, go to step 15.
+14. Use the "yield env.process" method to call the "registration_process", "consultation", "billing_process", "xray_process", "scan_process", "consultation", "billing_process", "pharmacy_process", and "dressing_process"

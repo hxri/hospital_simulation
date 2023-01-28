@@ -1,0 +1,16 @@
+1. Start the simulation environment using the SimPy library.
+2. Define the number of patients, the baseline arrival times, and the start and end times of the simulation.
+3. Create a function, "interval_gen," that takes in the number of patients and generates arrival intervals using interpolation of the baseline arrival times.
+4. Create helper functions, "consultation_decision" and "ip_decision," that generate random decisions for whether or not a patient will have a consultation or an inpatient stay.
+5. Create helper functions "oldOP_scan_decision," "NewOP_decision," and "OldOP_decision," that generate random decisions for the type of treatment a patient will receive.
+6. Create functions "plot_wait_times," "plot_processing_times," "plot_visits," and "plot_times," that take in data and generate visualizations of the simulation results.
+7. Create a function "p_type" that randomly assigns a patient type (NewOP, OldOP, OldOPScan, or IP) based on pre-defined weights.
+8. Create a function "patient_arrival" that represents the patient arrival process and includes the following steps:
+    a. Generate arrival intervals for the number of patients using the "interval_gen" function.
+    b. For each patient, use the "p_type" function to determine their patient type.
+    c. Based on their patient type, send the patient to the appropriate resource (doctors, registration, xray, scan, dressing, injection, pharmacy, or billing) using the SimPy "Resource" function.
+    d. Record the wait times and processing times for each patient and resource.
+8. Run the simulation using the "patient_arrival" function and the defined start and end times.
+9. Once the simulation is complete, use the visualization functions to generate plots of the simulation results.
+10. Save the simulation results to a file and/or display them on the screen.
+11. End the simulation.
