@@ -81,7 +81,7 @@ def patient_arrival(env, doctors, registration, xray, scan, dressing, injection,
     for i in range(NUM_PATIENTS):
         # a_time = arrival_time_list[i]
         # art.append(a_time)
-        delays.append(intervals[i])
+        # delays.append(intervals[i])
         yield env.timeout(intervals[i])
         current_time = datetime.datetime.fromtimestamp(env.now).time()
         # print(MAX_TIME)
@@ -442,7 +442,7 @@ for i in range(len(init.index)):
     NUM_PATIENTS = init['NUM_PATIENTS'][i]
 
     NUM_REGISTRATION_COUNTERS = init['NUM_REGISTRATION_COUNTERS'][i]
-    REGISTRATION_TIME = init['REGISTRATION_TIME'][i]*60 # seconds
+    REGISTRATION_TIME = (init['REGISTRATION_TIME'][i])*60 # seconds
 
     NUM_DOCTORS = init['NUM_DOCTORS'][i]
     CONSULTATION_TIME = init['CONSULTATION_TIME'][i]*60 # seconds
@@ -461,7 +461,7 @@ for i in range(len(init.index)):
 
     NUM_INJECTION_COUNTERS = init['NUM_INJECTION_COUNTERS'][i]
     INJECTION_TIME = init['INJECTION_TIME'][i]*60 # seconds
-
+ 
     NUM_DRESSING_COUNTERS = init['NUM_DRESSING_COUNTERS'][i]
     DRESSING_TIME = init['DRESSING_TIME'][i]*60 # seconds
 
@@ -528,7 +528,7 @@ for i in range(len(init.index)):
     bill_service_times = []
     inj_service_times = []
 
-    path = 'results/%s/'%i
+    path = 'results_0/%s/'%i
     os.makedirs(path, exist_ok=True)
 
     f = open(path + "logs.txt", "w")
@@ -598,7 +598,7 @@ for i in range(len(init.index)):
     # Plot Wait times and service times
     wait_time_per_process, service_time_per_process = avg_times()
 
-    services = ['R', 'C', 'B', 'D', 'S', 'X', 'I', 'P']
+    services = ['R', 'C', 'P', 'D', 'X', 'S', 'B', 'I']
     waits = wait_time_per_process
     service = service_time_per_process
     np.savetxt(path + 'wait_times_per_process.txt', waits)

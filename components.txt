@@ -1,8 +1,0 @@
-0,Registration,90,2
-1,Doctor Consultation,300,4
-2,Billing Section,90,3
-3,X Ray,600,2
-4,Scan,1200,3
-5,Injection,300,2
-6,Pharmacy,350,6
-7,Dressing,4200,3
