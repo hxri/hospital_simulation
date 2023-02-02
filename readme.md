@@ -7,4 +7,4 @@
 
 # Steps to run the simulation
 
-> python ./simulation_0.py
+    python ./simulation_0.py
