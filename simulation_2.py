@@ -439,7 +439,7 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
             total_wait_time += yield env.process(scan_process(env, scan, patient))
     
     elif patient_type == 'IP':
-        if(ip_decision == 0):
+        if(ip_decision == 1):
             total_wait_time += yield env.process(scan_process(env, scan, patient))
         else:
             total_wait_time += yield env.process(xray_process(env, xray, patient))
