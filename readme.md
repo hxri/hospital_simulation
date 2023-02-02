@@ -7,4 +7,5 @@
 
 # Steps to run the simulation
 
+    cd hospital_simulation
     python ./simulation_0.py
