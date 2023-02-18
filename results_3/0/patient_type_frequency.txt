@@ -1,4 +1,4 @@
 Number of IP patients visited: 15
-Number of New OP patients visited: 16
-Number of Old OP patients visited: 25
-Number of Old OP Scan patients visited: 11
+Number of New OP patients visited: 14
+Number of Old OP patients visited: 29
+Number of Old OP Scan patients visited: 9

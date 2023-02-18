@@ -114,11 +114,23 @@ def registration_process(env, registration, patient):
 
 # Create the consultation process
 def consultation(env, doctors, patient):
-    global num_consultation, cons_wait_times, cons_service_times
+    global end, exit_time, num_consultation, cons_wait_times, cons_service_times
+
+    if env.now > datetime.datetime.combine(datetime.date.today(), datetime.time(18, 0)).timestamp():
+        print("%s left the hospital at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
+        end = 1
+        exit_time = env.now
+        return 0  # Quit the service if time is greater than 6:00 PM
+
     num_consultation += 1
     print("%s arriving at the consultation room at %s." % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
     arrival_time = env.now
     processing_time = CONSULTATION_TIME + np.random.uniform(0,5)
+
+    # Wait until 8:00 AM
+    while env.now < (datetime.datetime.combine(datetime.date.today(), SERVICE_START_TIME).timestamp()):
+        yield env.timeout(60)  # Check every second
+
     with doctors.request() as req:
         yield req
         start_time = env.now
@@ -135,11 +147,23 @@ def consultation(env, doctors, patient):
 
 # Create the pharmacy process
 def pharmacy_process(env, pharmacy, patient):
-    global num_pharmacy, phar_wait_times, phar_service_times
+    global end, exit_time, num_pharmacy, phar_wait_times, phar_service_times
+
+    if env.now > datetime.datetime.combine(datetime.date.today(), datetime.time(18, 45)).timestamp():
+        print("%s left the hospital at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
+        end = 1
+        exit_time = env.now
+        return 0 # Quit the service if time is greater than 6:45 PM
+
     num_pharmacy += 1
     print("%s arriving at the pharmacy at %s." % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
     arrival_time = env.now
     processing_time = PHARMACY_TIME + np.random.uniform(0,5)
+
+    # Wait until 8:00 AM
+    while env.now < (datetime.datetime.combine(datetime.date.today(), SERVICE_START_TIME).timestamp()):
+        yield env.timeout(60)  # Check every second
+
     with pharmacy.request() as req:
         yield req
         start_time = env.now
@@ -156,11 +180,23 @@ def pharmacy_process(env, pharmacy, patient):
 
 # Create the dressing process
 def dressing_process(env, dressing, patient):
-    global num_dressing, dress_wait_times, dress_service_times
+    global end, exit_time, num_dressing, dress_wait_times, dress_service_times
+
+    if env.now > datetime.datetime.combine(datetime.date.today(), datetime.time(18, 45)).timestamp():
+        print("%s left the hospital at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
+        end = 1
+        exit_time = env.now
+        return 0 # Quit the service if time is greater than 6:45 PM
+        
     num_dressing += 1
     print("%s arriving at the dressing desk at %s." % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
     arrival_time = env.now
     processing_time = DRESSING_TIME + np.random.uniform(0,5)
+
+    # Wait until 8:00 AM
+    while env.now < (datetime.datetime.combine(datetime.date.today(), SERVICE_START_TIME).timestamp()):
+        yield env.timeout(60)  # Check every second
+
     with dressing.request() as req:
         yield req
         start_time = env.now
@@ -177,11 +213,23 @@ def dressing_process(env, dressing, patient):
 
 # Create the xray process
 def xray_process(env, xray, patient):
-    global num_xray, xray_wait_times, xray_service_times
+    global end, exit_time, num_xray, xray_wait_times, xray_service_times
+
+    if env.now > datetime.datetime.combine(datetime.date.today(), datetime.time(18, 45)).timestamp():
+        print("%s left the hospital at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
+        end = 1
+        exit_time = env.now
+        return 0 # Quit the service if time is greater than 6:45 PM
+
     num_xray += 1
     print("%s arriving at the xray room at %s." % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
     arrival_time = env.now
     processing_time = XRAY_TIME + np.random.uniform(0,5)
+
+    # Wait until 8:00 AM
+    while env.now < (datetime.datetime.combine(datetime.date.today(), SERVICE_START_TIME).timestamp()):
+        yield env.timeout(60)  # Check every second
+
     with xray.request() as req:
         yield req
         start_time = env.now
@@ -198,11 +246,23 @@ def xray_process(env, xray, patient):
 
 # Create the scan process
 def scan_process(env, scan, patient):
-    global num_scan, scan_wait_times, scan_service_times
+    global end, exit_time, num_scan, scan_wait_times, scan_service_times
+
+    if env.now > datetime.datetime.combine(datetime.date.today(), datetime.time(18, 45)).timestamp():
+        print("%s left the hospital at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
+        end = 1
+        exit_time = env.now
+        return 0 # Quit the service if time is greater than 6:45 PM
+
     num_scan += 1
     print("%s arriving at the scan at %s." % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
     arrival_time = env.now
     processing_time = SCAN_TIME + np.random.uniform(0,5)
+
+    # Wait until 8:00 AM
+    while env.now < (datetime.datetime.combine(datetime.date.today(), SERVICE_START_TIME).timestamp()):
+        yield env.timeout(60)  # Check every second
+
     with scan.request() as req:
         yield req
         start_time = env.now
@@ -219,7 +279,14 @@ def scan_process(env, scan, patient):
 
 # Create the billing process
 def billing_process(env, billing, patient):
-    global num_billing, bill_wait_times, bill_service_times
+    global end, exit_time, num_billing, bill_wait_times, bill_service_times
+
+    if env.now > datetime.datetime.combine(datetime.date.today(), datetime.time(18, 45)).timestamp():
+        print("%s left the hospital at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
+        end = 1
+        exit_time = env.now
+        return 0 # Quit the service if time is greater than 6:45 PM
+
     num_billing += 1
     print("%s arriving at the billing room at %s." % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
     arrival_time = env.now
@@ -240,11 +307,23 @@ def billing_process(env, billing, patient):
 
 # Create the injection process
 def injection_process(env, injection, patient):
-    global num_injection, inj_wait_times, inj_service_times
+    global end, exit_time, num_injection, inj_wait_times, inj_service_times
+
+    if env.now > datetime.datetime.combine(datetime.date.today(), datetime.time(18, 45)).timestamp():
+        print("%s left the hospital at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
+        end = 1
+        exit_time = env.now
+        return 0 # Quit the service if time is greater than 6:45 PM
+
     num_injection += 1
     print("%s arriving at the injection at %s." % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
     arrival_time = env.now
     processing_time = INJECTION_TIME + np.random.uniform(0,5)
+
+    # Wait until 8:00 AM
+    while env.now < (datetime.datetime.combine(datetime.date.today(), SERVICE_START_TIME).timestamp()):
+        yield env.timeout(60)  # Check every second
+        
     with injection.request() as req:
         yield req
         start_time = env.now
@@ -262,9 +341,11 @@ def injection_process(env, injection, patient):
 
 # Define patient flow
 def patient_flow(env, doctors, registration, xray, scan, dressing, injection, pharmacy, billing, patient):
+    global end, exit_time
     patient_type = p_type()
     total_wait_time = 0
     s_time = env.now
+    end = 0
     flow[patient] = {}
     # patient_type = ARRIVAL_TIME[i][1]
     print("%s is a %s patient." % (patient, patient_type), file=f)
@@ -274,122 +355,188 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
     if patient_type == 'NewOP':
         if(d0 == 0):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(xray_process(env, xray, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(xray_process(env, xray, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
             # total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
-            total_wait_time += yield env.process(dressing_process(env, dressing, patient))
+            if(end == 0):
+                 total_wait_time += yield env.process(dressing_process(env, dressing, patient))
         elif(d0 == 1):
             # Incomplete flow
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             print("%s left the hospital at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
         elif(d0 == 2):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
             # total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
-            total_wait_time += yield env.process(dressing_process(env, dressing, patient))
-            total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(dressing_process(env, dressing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
         elif(d0 == 3):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
             # total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
-            total_wait_time += yield env.process(dressing_process(env, dressing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(dressing_process(env, dressing, patient))
         elif(d0 == 4):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(xray_process(env, xray, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(xray_process(env, xray, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
         elif(d0 == 5):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
         elif(d0 == 6):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(dressing_process(env, dressing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(dressing_process(env, dressing, patient))
         elif(d0 == 7):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(injection_process(env, injection, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(injection_process(env, injection, patient))
         elif(d0 == 8):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(scan_process(env, scan, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(scan_process(env, scan, patient))
         elif(d0 == 9):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(xray_process(env, xray, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(xray_process(env, xray, patient))
         elif(d0 == 10):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(scan_process(env, scan, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(scan_process(env, scan, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
             
 
     if patient_type == 'OldOP':
         if(d1 == 0):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(xray_process(env, xray, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(xray_process(env, xray, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
             # total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
-            total_wait_time += yield env.process(dressing_process(env, dressing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(dressing_process(env, dressing, patient))
         elif(d1 == 1):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(xray_process(env, xray, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(xray_process(env, xray, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
             # total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
         elif(d1 == 2):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(xray_process(env, xray, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(xray_process(env, xray, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
         elif(d1 == 3):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
             # total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
-            total_wait_time += yield env.process(dressing_process(env, dressing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(dressing_process(env, dressing, patient))
         elif(d1 == 4):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
         elif(d1 == 5):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
         elif(d1 == 6):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(dressing_process(env, dressing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(dressing_process(env, dressing, patient))
         elif(d1 == 7):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(injection_process(env, injection, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(injection_process(env, injection, patient))
         elif(d1 == 8):
             # Incomplete flow
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
             print("%s left the hospital at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
         elif(d1 == 9):
             # Incomplete flow
@@ -399,23 +546,35 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
     elif patient_type == 'OldOPScan':
         total_wait_time += yield env.process(billing_process(env, billing, patient))
         if(d2 == 0):
-            total_wait_time += yield env.process(xray_process(env, xray, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(xray_process(env, xray, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
             # total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
-            total_wait_time += yield env.process(dressing_process(env, dressing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(dressing_process(env, dressing, patient))
         elif(d2 == 1):
-            total_wait_time += yield env.process(xray_process(env, xray, patient))
-            total_wait_time += yield env.process(consultation(env, doctors, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(xray_process(env, xray, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
         elif(d2 == 2):
-            total_wait_time += yield env.process(xray_process(env, xray, patient))
-            total_wait_time += yield env.process(billing_process(env, billing, patient))
-            total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(xray_process(env, xray, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(billing_process(env, billing, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(pharmacy_process(env, pharmacy, patient))
         elif(d2 == 3):
-            total_wait_time += yield env.process(xray_process(env, xray, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(xray_process(env, xray, patient))
         elif(d2 == 4):
-            total_wait_time += yield env.process(scan_process(env, scan, patient))
+            if(end == 0):
+                total_wait_time += yield env.process(scan_process(env, scan, patient))
     
     elif patient_type == 'IP':
         if(ip_decision == 1):
@@ -425,6 +584,8 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
     e_time = env.now
     processing_times.append((e_time - s_time)/60)
     wait_times.append(total_wait_time)
+    if(end == 1):
+        left_patients.append([patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')])
 
 ##############################
 ##### Patient Loop
@@ -432,8 +593,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
 
 BASELINE_ARRIVALS = pd.read_csv('baseline_intervals.txt')
 START_TIME = datetime.time(7, 30) # 7:30 AM
+SERVICE_START_TIME = datetime.time(8, 0) # 8:00 AM
 MAX_TIME = datetime.time(18, 45) # 6:45 PM
 MAX_WAIT_TIME = 35*60
+global end
 
 init = pd.read_csv('init.csv')
 
@@ -528,12 +691,16 @@ for i in range(len(init.index)):
     bill_service_times = []
     inj_service_times = []
 
+    left_patients = []
+    exit_time = 0
+
     path = 'results_1/%s/'%i
     os.makedirs(path, exist_ok=True)
 
     f = open(path + "logs.txt", "w")
     env.process(patient_arrival(env, doctors, registration, xray, scan, dressing, injection, pharmacy, billing))
     env.run()
+    print("+++++++++ End of simulation +++++++++", file=f)
     f.close()
 
     # Plot wait times and proe=cessing times
@@ -603,6 +770,7 @@ for i in range(len(init.index)):
     service = service_time_per_process
     np.savetxt(path + 'wait_times_per_process.txt', waits)
     np.savetxt(path + 'service_times_per_process.txt', service)
+    np.savetxt(path + 'patients_left_after_waiting.txt', left_patients, fmt='%s')
 
     plot_times(services, waits, path, 'wait_times_per_service.png')
     plot_times(services, service, path, 'service_times_per_service.png')

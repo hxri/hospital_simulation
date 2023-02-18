@@ -1,1161 +1,939 @@
-Patient 0 is a NewOP patient.
-Patient 0 arriving at the registration desk at 07:30:00 AM.
-Patient 0 starting registration process at 07:30:00 AM.
-Patient 1 is a NewOP patient.
-Patient 1 arriving at the registration desk at 07:30:03 AM.
-Patient 2 is a OldOP patient.
-Patient 2 arriving at the registration desk at 07:30:03 AM.
+Patient 0 is a OldOPScan patient.
+Patient 0 arriving at the billing room at 07:30:00 AM.
+Patient 1 is a OldOP patient.
+Patient 1 arriving at the registration desk at 07:30:00 AM.
+Patient 0 starting billing process at 07:30:00 AM.
+Patient 2 is a OldOPScan patient.
+Patient 2 arriving at the billing room at 07:30:00 AM.
+Patient 1 starting registration process at 07:30:00 AM.
 Patient 3 is a OldOPScan patient.
-Patient 3 arriving at the billing room at 07:30:48 AM.
-Patient 3 starting billing process at 07:30:48 AM.
-Patient 4 is a IP patient.
-Patient 4 arriving at the xray room at 07:31:24 AM.
+Patient 3 arriving at the billing room at 07:31:00 AM.
+Patient 4 is a NewOP patient.
+Patient 4 arriving at the registration desk at 07:31:00 AM.
 Patient 5 is a OldOP patient.
-Patient 5 arriving at the registration desk at 07:31:24 AM.
-Patient 4 starting xray process at 07:31:24 AM.
-Patient 6 is a NewOP patient.
-Patient 6 arriving at the registration desk at 07:31:43 AM.
-Patient 7 is a OldOP patient.
-Patient 7 arriving at the registration desk at 07:32:39 AM.
-Patient 8 is a IP patient.
-Patient 8 arriving at the xray room at 07:33:42 AM.
-Patient 0 finishing registration process at 07:37:00 AM.
-Patient 0 waited 0.0 minutes at the registration desk
-Patient 0 arriving at the consultation room at 07:37:00 AM.
-Patient 1 starting registration process at 07:37:00 AM.
-Patient 0 starting consultation with a doctor at 07:37:00 AM.
-Patient 9 is a IP patient.
-Patient 9 arriving at the xray room at 07:37:38 AM.
+Patient 5 arriving at the registration desk at 07:31:00 AM.
+Patient 6 is a IP patient.
+Patient 6 arriving at the xray room at 07:32:00 AM.
+Patient 7 is a NewOP patient.
+Patient 7 arriving at the registration desk at 07:33:00 AM.
+Patient 8 is a OldOP patient.
+Patient 8 arriving at the registration desk at 07:36:59 AM.
+Patient 1 finishing registration process at 07:37:00 AM.
+Patient 1 waited 0.0 minutes at the registration desk
+Patient 1 arriving at the consultation room at 07:37:00 AM.
+Patient 4 starting registration process at 07:37:00 AM.
+Patient 9 is a OldOP patient.
+Patient 9 arriving at the registration desk at 07:37:59 AM.
 Patient 10 is a OldOP patient.
-Patient 10 arriving at the registration desk at 07:39:16 AM.
-Patient 11 is a OldOP patient.
-Patient 11 arriving at the registration desk at 07:40:29 AM.
-Patient 3 finishing billing process at 07:40:50 AM.
-Patient 3 waited 0.0 minutes at the billing room
-Patient 3 arriving at the xray room at 07:40:50 AM.
-Patient 12 is a IP patient.
-Patient 12 arriving at the xray room at 07:43:29 AM.
-Patient 1 finishing registration process at 07:44:01 AM.
-Patient 1 waited 6.955557485421498 minutes at the registration desk
-Patient 1 arriving at the consultation room at 07:44:01 AM.
-Patient 2 starting registration process at 07:44:01 AM.
-Patient 13 is a OldOP patient.
-Patient 13 arriving at the registration desk at 07:45:28 AM.
+Patient 10 arriving at the registration desk at 07:39:59 AM.
+Patient 0 finishing billing process at 07:40:03 AM.
+Patient 0 waited 0.0 minutes at the billing room
+Patient 0 arriving at the xray room at 07:40:03 AM.
+Patient 2 starting billing process at 07:40:03 AM.
+Patient 11 is a NewOP patient.
+Patient 11 arriving at the registration desk at 07:42:59 AM.
+Patient 12 is a OldOP patient.
+Patient 12 arriving at the registration desk at 07:42:59 AM.
+Patient 13 is a NewOP patient.
+Patient 13 arriving at the registration desk at 07:42:59 AM.
+Patient 4 finishing registration process at 07:44:02 AM.
+Patient 4 waited 6.0073420325915015 minutes at the registration desk
+Patient 4 arriving at the consultation room at 07:44:02 AM.
+Patient 5 starting registration process at 07:44:02 AM.
 Patient 14 is a OldOPScan patient.
-Patient 14 arriving at the billing room at 07:45:28 AM.
-Patient 14 starting billing process at 07:45:28 AM.
+Patient 14 arriving at the billing room at 07:47:58 AM.
 Patient 15 is a IP patient.
-Patient 15 arriving at the xray room at 07:46:24 AM.
-Patient 0 finishing consultation with a doctor at 07:48:03 AM.
-Patient 0 waited 0.0 minutes at the consultation room
-Patient 0 arriving at the billing room at 07:48:03 AM.
-Patient 1 starting consultation with a doctor at 07:48:03 AM.
-Patient 2 finishing registration process at 07:51:05 AM.
-Patient 2 waited 13.970958570639292 minutes at the registration desk
-Patient 2 arriving at the consultation room at 07:51:05 AM.
-Patient 5 starting registration process at 07:51:05 AM.
-Patient 16 is a NewOP patient.
-Patient 16 arriving at the registration desk at 07:51:22 AM.
-Patient 17 is a OldOP patient.
-Patient 17 arriving at the registration desk at 07:51:41 AM.
-Patient 18 is a IP patient.
-Patient 18 arriving at the xray room at 07:51:46 AM.
-Patient 4 finishing xray process at 07:52:28 AM.
-Patient 4 waited 0.0 minutes at the xray room
-Patient 8 starting xray process at 07:52:28 AM.
-Patient 14 finishing billing process at 07:55:28 AM.
-Patient 14 waited 0.0 minutes at the billing room
-Patient 14 arriving at the xray room at 07:55:28 AM.
-Patient 0 starting billing process at 07:55:28 AM.
-Patient 19 is a OldOP patient.
-Patient 19 arriving at the registration desk at 07:57:18 AM.
-Patient 5 finishing registration process at 07:58:08 AM.
-Patient 5 waited 19.686440801620485 minutes at the registration desk
-Patient 5 arriving at the consultation room at 07:58:08 AM.
-Patient 6 starting registration process at 07:58:08 AM.
-Patient 1 finishing consultation with a doctor at 07:59:04 AM.
-Patient 1 waited 4.033213063081106 minutes at the consultation room
-Patient 1 arriving at the billing room at 07:59:04 AM.
-Patient 2 starting consultation with a doctor at 07:59:04 AM.
-Patient 20 is a NewOP patient.
-Patient 20 arriving at the registration desk at 08:04:26 AM.
-Patient 6 finishing registration process at 08:05:10 AM.
-Patient 6 waited 26.422161547342935 minutes at the registration desk
-Patient 6 arriving at the consultation room at 08:05:10 AM.
-Patient 7 starting registration process at 08:05:10 AM.
-Patient 0 finishing billing process at 08:05:30 AM.
-Patient 0 waited 7.42223250468572 minutes at the billing room
-Patient 0 arriving at the xray room at 08:05:30 AM.
-Patient 1 starting billing process at 08:05:30 AM.
-Patient 21 is a NewOP patient.
-Patient 21 arriving at the registration desk at 08:09:07 AM.
-Patient 2 finishing consultation with a doctor at 08:10:05 AM.
-Patient 2 waited 7.980669558048248 minutes at the consultation room
-Patient 5 starting consultation with a doctor at 08:10:05 AM.
+Patient 15 arriving at the xray room at 07:47:58 AM.
+Patient 16 is a OldOP patient.
+Patient 16 arriving at the registration desk at 07:48:58 AM.
+Patient 2 finishing billing process at 07:50:05 AM.
+Patient 2 waited 10.066589971383413 minutes at the billing room
+Patient 2 arriving at the scan at 07:50:05 AM.
+Patient 3 starting billing process at 07:50:05 AM.
+Patient 5 finishing registration process at 07:51:04 AM.
+Patient 5 waited 13.048890149593353 minutes at the registration desk
+Patient 5 arriving at the consultation room at 07:51:04 AM.
+Patient 7 starting registration process at 07:51:04 AM.
+Patient 17 is a IP patient.
+Patient 17 arriving at the xray room at 07:55:57 AM.
+Patient 7 finishing registration process at 07:58:04 AM.
+Patient 7 waited 18.072121612230937 minutes at the registration desk
+Patient 7 arriving at the consultation room at 07:58:04 AM.
+Patient 8 starting registration process at 07:58:04 AM.
+Patient 6 starting xray process at 08:00:00 AM.
+Patient 1 starting consultation with a doctor at 08:00:00 AM.
+Patient 2 starting scan process at 08:00:05 AM.
+Patient 3 finishing billing process at 08:00:07 AM.
+Patient 3 waited 19.088962407906852 minutes at the billing room
+Patient 3 arriving at the xray room at 08:00:07 AM.
+Patient 14 starting billing process at 08:00:07 AM.
+Patient 18 is a OldOP patient.
+Patient 18 arriving at the registration desk at 08:01:57 AM.
+Patient 19 is a NewOP patient.
+Patient 19 arriving at the registration desk at 08:04:57 AM.
+Patient 8 finishing registration process at 08:05:09 AM.
+Patient 8 waited 21.091207122802736 minutes at the registration desk
+Patient 8 arriving at the consultation room at 08:05:09 AM.
+Patient 9 starting registration process at 08:05:09 AM.
+Patient 20 is a OldOP patient.
+Patient 20 arriving at the registration desk at 08:07:57 AM.
+Patient 14 finishing billing process at 08:10:08 AM.
+Patient 14 waited 12.165266831715902 minutes at the billing room
+Patient 14 arriving at the scan at 08:10:08 AM.
+Patient 9 finishing registration process at 08:12:11 AM.
+Patient 9 waited 27.174285407861074 minutes at the registration desk
+Patient 9 arriving at the consultation room at 08:12:11 AM.
+Patient 10 starting registration process at 08:12:11 AM.
+Patient 1 finishing consultation with a doctor at 08:14:04 AM.
+Patient 1 waited 23.0 minutes at the consultation room
+Patient 1 arriving at the billing room at 08:14:04 AM.
+Patient 4 starting consultation with a doctor at 08:14:04 AM.
+Patient 1 starting billing process at 08:14:04 AM.
+Patient 21 is a OldOPScan patient.
+Patient 21 arriving at the billing room at 08:16:57 AM.
+Patient 10 finishing registration process at 08:19:11 AM.
+Patient 10 waited 32.21377116839091 minutes at the registration desk
+Patient 10 arriving at the consultation room at 08:19:11 AM.
+Patient 11 starting registration process at 08:19:11 AM.
 Patient 22 is a IP patient.
-Patient 22 arriving at the xray room at 08:11:09 AM.
-Patient 7 finishing registration process at 08:12:12 AM.
-Patient 7 waited 32.528798568248746 minutes at the registration desk
-Patient 7 arriving at the consultation room at 08:12:12 AM.
-Patient 10 starting registration process at 08:12:12 AM.
-Patient 8 finishing xray process at 08:13:31 AM.
-Patient 8 waited 18.782295552889504 minutes at the xray room
-Patient 9 starting xray process at 08:13:31 AM.
-Patient 1 finishing billing process at 08:15:33 AM.
-Patient 1 waited 6.440575814247131 minutes at the billing room
-Patient 1 arriving at the dressing desk at 08:15:33 AM.
-Patient 1 starting dressing process at 08:15:33 AM.
+Patient 22 arriving at the xray room at 08:19:57 AM.
+Patient 6 finishing xray process at 08:21:03 AM.
+Patient 6 waited 28.0 minutes at the xray room
+Patient 0 starting xray process at 08:21:03 AM.
+Patient 1 finishing billing process at 08:24:04 AM.
+Patient 1 waited 0.0 minutes at the billing room
+Patient 1 arriving at the xray room at 08:24:04 AM.
+Patient 21 starting billing process at 08:24:04 AM.
+Patient 11 finishing registration process at 08:26:13 AM.
+Patient 11 waited 36.21406267484029 minutes at the registration desk
+Patient 11 arriving at the consultation room at 08:26:13 AM.
+Patient 12 starting registration process at 08:26:13 AM.
+Patient 4 finishing consultation with a doctor at 08:28:07 AM.
+Patient 4 waited 30.023777556419372 minutes at the consultation room
+Patient 4 arriving at the billing room at 08:28:07 AM.
+Patient 5 starting consultation with a doctor at 08:28:07 AM.
+Patient 2 finishing scan process at 08:28:09 AM.
+Patient 2 waited 10.0 minutes at the scan
+Patient 14 starting scan process at 08:28:09 AM.
+Patient 12 finishing registration process at 08:33:13 AM.
+Patient 12 waited 43.233973598480226 minutes at the registration desk
+Patient 12 arriving at the consultation room at 08:33:13 AM.
+Patient 13 starting registration process at 08:33:13 AM.
+Patient 21 finishing billing process at 08:34:05 AM.
+Patient 21 waited 7.131218882401784 minutes at the billing room
+Patient 21 arriving at the scan at 08:34:05 AM.
+Patient 4 starting billing process at 08:34:05 AM.
+Patient 13 finishing registration process at 08:40:16 AM.
+Patient 13 waited 50.2344473918279 minutes at the registration desk
+Patient 13 left the hospital at 08:40:16 AM
+Patient 16 starting registration process at 08:40:16 AM.
+Patient 0 finishing xray process at 08:42:05 AM.
+Patient 0 waited 40.986730655034386 minutes at the xray room
+Patient 0 arriving at the consultation room at 08:42:05 AM.
+Patient 3 starting xray process at 08:42:05 AM.
+Patient 5 finishing consultation with a doctor at 08:42:07 AM.
+Patient 5 waited 37.049427127838136 minutes at the consultation room
+Patient 5 left the hospital at 08:42:07 AM
+Patient 7 starting consultation with a doctor at 08:42:07 AM.
+Patient 4 finishing billing process at 08:44:07 AM.
+Patient 4 waited 5.967980670928955 minutes at the billing room
+Patient 4 arriving at the pharmacy at 08:44:07 AM.
+Patient 4 starting pharmacy process at 08:44:07 AM.
+Patient 16 finishing registration process at 08:47:17 AM.
+Patient 16 waited 51.31131939888 minutes at the registration desk
+Patient 16 arriving at the consultation room at 08:47:17 AM.
+Patient 18 starting registration process at 08:47:17 AM.
 Patient 23 is a OldOP patient.
-Patient 23 arriving at the registration desk at 08:15:51 AM.
-Patient 10 finishing registration process at 08:19:15 AM.
-Patient 10 waited 32.93449676434199 minutes at the registration desk
-Patient 10 arriving at the consultation room at 08:19:15 AM.
-Patient 11 starting registration process at 08:19:15 AM.
-Patient 5 finishing consultation with a doctor at 08:21:08 AM.
-Patient 5 waited 11.947968618075054 minutes at the consultation room
-Patient 5 arriving at the billing room at 08:21:08 AM.
-Patient 6 starting consultation with a doctor at 08:21:08 AM.
-Patient 5 starting billing process at 08:21:08 AM.
+Patient 23 arriving at the registration desk at 08:49:56 AM.
+Patient 18 finishing registration process at 08:54:22 AM.
+Patient 18 waited 45.34172153870265 minutes at the registration desk
+Patient 18 arriving at the consultation room at 08:54:22 AM.
+Patient 19 starting registration process at 08:54:22 AM.
 Patient 24 is a NewOP patient.
-Patient 24 arriving at the registration desk at 08:24:14 AM.
-Patient 11 finishing registration process at 08:26:16 AM.
-Patient 11 waited 38.78298264344533 minutes at the registration desk
-Patient 11 arriving at the consultation room at 08:26:16 AM.
-Patient 13 starting registration process at 08:26:16 AM.
-Patient 25 is a OldOPScan patient.
-Patient 25 arriving at the billing room at 08:26:38 AM.
-Patient 1 finishing dressing process at 08:30:37 AM.
-Patient 1 waited 0.0 minutes at the dressing desk
-Patient 5 finishing billing process at 08:31:13 AM.
-Patient 5 waited 0.0 minutes at the billing room
-Patient 5 arriving at the injection at 08:31:13 AM.
-Patient 25 starting billing process at 08:31:13 AM.
-Patient 5 starting injection process at 08:31:13 AM.
-Patient 6 finishing consultation with a doctor at 08:32:09 AM.
-Patient 6 waited 15.958922791481019 minutes at the consultation room
-Patient 6 arriving at the billing room at 08:32:09 AM.
-Patient 7 starting consultation with a doctor at 08:32:09 AM.
-Patient 13 finishing registration process at 08:33:21 AM.
-Patient 13 waited 40.81526832580566 minutes at the registration desk
-Patient 13 arriving at the consultation room at 08:33:21 AM.
-Patient 16 starting registration process at 08:33:21 AM.
-Patient 9 finishing xray process at 08:34:35 AM.
-Patient 9 waited 35.89720504283905 minutes at the xray room
-Patient 3 starting xray process at 08:34:35 AM.
-Patient 16 finishing registration process at 08:40:21 AM.
-Patient 16 waited 41.98381680250168 minutes at the registration desk
-Patient 16 arriving at the consultation room at 08:40:21 AM.
-Patient 17 starting registration process at 08:40:21 AM.
-Patient 25 finishing billing process at 08:41:14 AM.
-Patient 25 waited 4.5858327627182005 minutes at the billing room
-Patient 25 arriving at the scan at 08:41:14 AM.
-Patient 6 starting billing process at 08:41:14 AM.
-Patient 25 starting scan process at 08:41:14 AM.
-Patient 5 finishing injection process at 08:31:13 AM.
-Patient 5 waited 0.0 minutes at the injection
-Patient 7 finishing consultation with a doctor at 08:43:11 AM.
-Patient 7 waited 19.959592537085214 minutes at the consultation room
-Patient 7 left the hospital at 08:43:11 AM
-Patient 10 starting consultation with a doctor at 08:43:11 AM.
-Patient 17 finishing registration process at 08:47:25 AM.
-Patient 17 waited 48.66745547453562 minutes at the registration desk
-Patient 17 arriving at the consultation room at 08:47:25 AM.
-Patient 19 starting registration process at 08:47:25 AM.
-Patient 6 finishing billing process at 08:51:18 AM.
-Patient 6 waited 9.086782070000966 minutes at the billing room
-Patient 6 arriving at the scan at 08:51:18 AM.
-Patient 10 finishing consultation with a doctor at 08:54:14 AM.
-Patient 10 waited 23.933385495344798 minutes at the consultation room
-Patient 10 arriving at the billing room at 08:54:14 AM.
-Patient 11 starting consultation with a doctor at 08:54:14 AM.
-Patient 10 starting billing process at 08:54:14 AM.
-Patient 19 finishing registration process at 08:54:28 AM.
-Patient 19 waited 50.12955735127131 minutes at the registration desk
-Patient 19 arriving at the consultation room at 08:54:28 AM.
-Patient 20 starting registration process at 08:54:28 AM.
+Patient 24 arriving at the registration desk at 08:55:56 AM.
+Patient 7 finishing consultation with a doctor at 08:56:08 AM.
+Patient 7 waited 44.05783065160116 minutes at the consultation room
+Patient 7 arriving at the billing room at 08:56:08 AM.
+Patient 8 starting consultation with a doctor at 08:56:08 AM.
+Patient 7 starting billing process at 08:56:08 AM.
+Patient 14 finishing scan process at 08:56:12 AM.
+Patient 14 waited 18.01439380645752 minutes at the scan
+Patient 21 starting scan process at 08:56:12 AM.
+Patient 4 finishing pharmacy process at 08:59:11 AM.
+Patient 4 waited 0.0 minutes at the pharmacy
+Patient 19 finishing registration process at 09:01:23 AM.
+Patient 19 waited 49.418574865659075 minutes at the registration desk
+Patient 19 arriving at the consultation room at 09:01:23 AM.
+Patient 20 starting registration process at 09:01:23 AM.
+Patient 25 is a NewOP patient.
+Patient 25 arriving at the registration desk at 09:02:56 AM.
+Patient 3 finishing xray process at 09:03:08 AM.
+Patient 3 waited 41.95758261283239 minutes at the xray room
+Patient 17 starting xray process at 09:03:08 AM.
+Patient 7 finishing billing process at 09:06:09 AM.
+Patient 7 waited 0.0 minutes at the billing room
+Patient 7 arriving at the xray room at 09:06:09 AM.
 Patient 26 is a OldOPScan patient.
-Patient 26 arriving at the billing room at 08:54:46 AM.
-Patient 3 finishing xray process at 08:55:36 AM.
-Patient 3 waited 53.74782686630885 minutes at the xray room
-Patient 3 arriving at the consultation room at 08:55:36 AM.
-Patient 12 starting xray process at 08:55:36 AM.
-Patient 20 finishing registration process at 09:01:31 AM.
-Patient 20 waited 50.04348459243774 minutes at the registration desk
-Patient 20 arriving at the consultation room at 09:01:31 AM.
-Patient 21 starting registration process at 09:01:31 AM.
-Patient 10 finishing billing process at 09:04:14 AM.
-Patient 10 waited 0.0 minutes at the billing room
-Patient 10 arriving at the xray room at 09:04:14 AM.
-Patient 26 starting billing process at 09:04:14 AM.
-Patient 11 finishing consultation with a doctor at 09:05:15 AM.
-Patient 11 waited 27.95435478289922 minutes at the consultation room
-Patient 11 arriving at the billing room at 09:05:15 AM.
-Patient 13 starting consultation with a doctor at 09:05:15 AM.
-Patient 27 is a NewOP patient.
-Patient 27 arriving at the registration desk at 09:08:20 AM.
-Patient 21 finishing registration process at 09:08:34 AM.
-Patient 21 waited 52.41222960154216 minutes at the registration desk
-Patient 21 arriving at the consultation room at 09:08:34 AM.
-Patient 23 starting registration process at 09:08:34 AM.
-Patient 25 finishing scan process at 09:09:19 AM.
-Patient 25 waited 0.0 minutes at the scan
-Patient 6 starting scan process at 09:09:19 AM.
-Patient 28 is a NewOP patient.
-Patient 28 arriving at the registration desk at 09:12:46 AM.
-Patient 26 finishing billing process at 09:14:15 AM.
-Patient 26 waited 9.479996430873872 minutes at the billing room
-Patient 26 arriving at the scan at 09:14:15 AM.
-Patient 11 starting billing process at 09:14:15 AM.
-Patient 23 finishing registration process at 09:15:37 AM.
-Patient 23 waited 52.726441621780396 minutes at the registration desk
-Patient 23 arriving at the consultation room at 09:15:37 AM.
-Patient 24 starting registration process at 09:15:37 AM.
-Patient 13 finishing consultation with a doctor at 09:16:20 AM.
-Patient 13 waited 31.90950370232264 minutes at the consultation room
-Patient 13 arriving at the billing room at 09:16:20 AM.
-Patient 16 starting consultation with a doctor at 09:16:20 AM.
-Patient 12 finishing xray process at 09:16:41 AM.
-Patient 12 waited 72.12674336830774 minutes at the xray room
-Patient 15 starting xray process at 09:16:41 AM.
+Patient 26 arriving at the billing room at 09:06:56 AM.
+Patient 26 starting billing process at 09:06:56 AM.
+Patient 20 finishing registration process at 09:08:24 AM.
+Patient 20 waited 53.44465932448705 minutes at the registration desk
+Patient 20 arriving at the consultation room at 09:08:24 AM.
+Patient 23 starting registration process at 09:08:24 AM.
+Patient 8 finishing consultation with a doctor at 09:10:11 AM.
+Patient 8 waited 50.988771959145865 minutes at the consultation room
+Patient 8 arriving at the billing room at 09:10:11 AM.
+Patient 9 starting consultation with a doctor at 09:10:11 AM.
+Patient 23 finishing registration process at 09:15:29 AM.
+Patient 23 waited 18.48046253124873 minutes at the registration desk
+Patient 23 arriving at the consultation room at 09:15:29 AM.
+Patient 24 starting registration process at 09:15:29 AM.
+Patient 27 is a OldOP patient.
+Patient 27 arriving at the registration desk at 09:16:56 AM.
+Patient 26 finishing billing process at 09:16:58 AM.
+Patient 26 waited 0.0 minutes at the billing room
+Patient 26 arriving at the xray room at 09:16:58 AM.
+Patient 8 starting billing process at 09:16:58 AM.
+Patient 28 is a OldOPScan patient.
+Patient 28 arriving at the billing room at 09:21:56 AM.
+Patient 24 finishing registration process at 09:22:33 AM.
+Patient 24 waited 19.552430860201518 minutes at the registration desk
+Patient 24 arriving at the consultation room at 09:22:33 AM.
+Patient 25 starting registration process at 09:22:33 AM.
+Patient 17 finishing xray process at 09:24:12 AM.
+Patient 17 waited 67.1865560332934 minutes at the xray room
+Patient 15 starting xray process at 09:24:12 AM.
+Patient 21 finishing scan process at 09:24:14 AM.
+Patient 21 waited 22.114612066745757 minutes at the scan
+Patient 9 finishing consultation with a doctor at 09:24:15 AM.
+Patient 9 waited 57.99030349254608 minutes at the consultation room
+Patient 9 arriving at the billing room at 09:24:15 AM.
+Patient 10 starting consultation with a doctor at 09:24:15 AM.
+Patient 8 finishing billing process at 09:27:00 AM.
+Patient 8 waited 6.794815977414449 minutes at the billing room
+Patient 8 arriving at the xray room at 09:27:00 AM.
+Patient 28 starting billing process at 09:27:00 AM.
+Patient 25 finishing registration process at 09:29:33 AM.
+Patient 25 waited 19.623807466030122 minutes at the registration desk
+Patient 25 arriving at the consultation room at 09:29:33 AM.
+Patient 27 starting registration process at 09:29:33 AM.
+Patient 27 finishing registration process at 09:36:36 AM.
+Patient 27 waited 12.627996810277303 minutes at the registration desk
+Patient 27 arriving at the consultation room at 09:36:36 AM.
+Patient 28 finishing billing process at 09:37:03 AM.
+Patient 28 waited 5.080760395526886 minutes at the billing room
+Patient 28 arriving at the scan at 09:37:03 AM.
+Patient 9 starting billing process at 09:37:03 AM.
+Patient 28 starting scan process at 09:37:03 AM.
+Patient 10 finishing consultation with a doctor at 09:38:20 AM.
+Patient 10 waited 65.0634944876035 minutes at the consultation room
+Patient 10 arriving at the billing room at 09:38:20 AM.
+Patient 11 starting consultation with a doctor at 09:38:20 AM.
+Patient 15 finishing xray process at 09:45:13 AM.
+Patient 15 waited 96.23665206829706 minutes at the xray room
+Patient 22 starting xray process at 09:45:13 AM.
 Patient 29 is a OldOPScan patient.
-Patient 29 arriving at the billing room at 09:18:28 AM.
-Patient 24 finishing registration process at 09:22:42 AM.
-Patient 24 waited 51.39887299935023 minutes at the registration desk
-Patient 24 arriving at the consultation room at 09:22:42 AM.
-Patient 27 starting registration process at 09:22:42 AM.
-Patient 11 finishing billing process at 09:24:18 AM.
-Patient 11 waited 9.005011785030366 minutes at the billing room
-Patient 11 arriving at the pharmacy at 09:24:18 AM.
-Patient 13 starting billing process at 09:24:18 AM.
-Patient 11 starting pharmacy process at 09:24:18 AM.
-Patient 30 is a NewOP patient.
-Patient 30 arriving at the registration desk at 09:24:40 AM.
-Patient 16 finishing consultation with a doctor at 09:27:21 AM.
-Patient 16 waited 35.987343394756316 minutes at the consultation room
-Patient 16 arriving at the billing room at 09:27:21 AM.
-Patient 17 starting consultation with a doctor at 09:27:21 AM.
-Patient 27 finishing registration process at 09:29:42 AM.
-Patient 27 waited 14.369421776135763 minutes at the registration desk
-Patient 27 arriving at the consultation room at 09:29:42 AM.
-Patient 28 starting registration process at 09:29:42 AM.
-Patient 31 is a NewOP patient.
-Patient 31 arriving at the registration desk at 09:33:16 AM.
-Patient 13 finishing billing process at 09:34:23 AM.
-Patient 13 waited 7.969087346394857 minutes at the billing room
-Patient 13 arriving at the dressing desk at 09:34:23 AM.
-Patient 29 starting billing process at 09:34:23 AM.
-Patient 13 starting dressing process at 09:34:23 AM.
-Patient 28 finishing registration process at 09:36:45 AM.
-Patient 28 waited 16.945941817760467 minutes at the registration desk
-Patient 28 arriving at the consultation room at 09:36:45 AM.
-Patient 30 starting registration process at 09:36:45 AM.
-Patient 6 finishing scan process at 09:37:22 AM.
-Patient 6 waited 18.016690266132354 minutes at the scan
-Patient 26 starting scan process at 09:37:22 AM.
-Patient 15 finishing xray process at 09:37:44 AM.
-Patient 15 waited 90.28643780946732 minutes at the xray room
-Patient 18 starting xray process at 09:37:44 AM.
-Patient 17 finishing consultation with a doctor at 09:38:22 AM.
-Patient 17 waited 39.921951611836754 minutes at the consultation room
-Patient 17 left the hospital at 09:38:22 AM
-Patient 19 starting consultation with a doctor at 09:38:22 AM.
-Patient 11 finishing pharmacy process at 09:39:21 AM.
-Patient 11 waited 0.0 minutes at the pharmacy
-Patient 32 is a OldOP patient.
-Patient 32 arriving at the registration desk at 09:39:42 AM.
-Patient 30 finishing registration process at 09:43:49 AM.
-Patient 30 waited 12.093990155061086 minutes at the registration desk
-Patient 30 arriving at the consultation room at 09:43:49 AM.
-Patient 31 starting registration process at 09:43:49 AM.
-Patient 29 finishing billing process at 09:44:25 AM.
-Patient 29 waited 15.923817845185598 minutes at the billing room
-Patient 29 arriving at the scan at 09:44:25 AM.
-Patient 16 starting billing process at 09:44:25 AM.
-Patient 19 finishing consultation with a doctor at 09:49:23 AM.
-Patient 19 waited 43.890207731723784 minutes at the consultation room
-Patient 3 starting consultation with a doctor at 09:49:23 AM.
-Patient 13 finishing dressing process at 09:49:24 AM.
-Patient 13 waited 0.0 minutes at the dressing desk
-Patient 31 finishing registration process at 09:50:53 AM.
-Patient 31 waited 10.554127446810405 minutes at the registration desk
-Patient 31 arriving at the consultation room at 09:50:53 AM.
-Patient 32 starting registration process at 09:50:53 AM.
-Patient 16 finishing billing process at 09:54:28 AM.
-Patient 16 waited 17.0739394903183 minutes at the billing room
-Patient 16 arriving at the scan at 09:54:28 AM.
-Patient 32 finishing registration process at 09:57:56 AM.
-Patient 32 waited 11.18856262365977 minutes at the registration desk
-Patient 32 arriving at the consultation room at 09:57:56 AM.
-Patient 18 finishing xray process at 09:58:48 AM.
-Patient 18 waited 105.97951522668203 minutes at the xray room
-Patient 14 starting xray process at 09:58:48 AM.
-Patient 3 finishing consultation with a doctor at 10:00:23 AM.
-Patient 3 waited 53.78712639808655 minutes at the consultation room
-Patient 3 arriving at the billing room at 10:00:23 AM.
-Patient 20 starting consultation with a doctor at 10:00:23 AM.
-Patient 3 starting billing process at 10:00:23 AM.
-Patient 33 is a OldOPScan patient.
-Patient 33 arriving at the billing room at 10:03:38 AM.
-Patient 26 finishing scan process at 10:05:26 AM.
-Patient 26 waited 23.1093855937322 minutes at the scan
-Patient 29 starting scan process at 10:05:26 AM.
-Patient 3 finishing billing process at 10:10:27 AM.
-Patient 3 waited 0.0 minutes at the billing room
-Patient 3 arriving at the pharmacy at 10:10:27 AM.
-Patient 33 starting billing process at 10:10:27 AM.
-Patient 3 starting pharmacy process at 10:10:27 AM.
-Patient 20 finishing consultation with a doctor at 10:11:24 AM.
-Patient 20 waited 58.86874035199483 minutes at the consultation room
-Patient 20 arriving at the billing room at 10:11:24 AM.
-Patient 21 starting consultation with a doctor at 10:11:24 AM.
-Patient 34 is a OldOPScan patient.
-Patient 34 arriving at the billing room at 10:16:08 AM.
-Patient 14 finishing xray process at 10:19:50 AM.
-Patient 14 waited 123.32525537014007 minutes at the xray room
-Patient 14 arriving at the consultation room at 10:19:50 AM.
-Patient 0 starting xray process at 10:19:50 AM.
-Patient 33 finishing billing process at 10:20:29 AM.
-Patient 33 waited 6.816748821735382 minutes at the billing room
-Patient 33 arriving at the xray room at 10:20:29 AM.
-Patient 20 starting billing process at 10:20:29 AM.
-Patient 21 finishing consultation with a doctor at 10:22:26 AM.
-Patient 21 waited 62.83781298796336 minutes at the consultation room
-Patient 21 arriving at the billing room at 10:22:26 AM.
-Patient 23 starting consultation with a doctor at 10:22:26 AM.
-Patient 3 finishing pharmacy process at 10:25:27 AM.
-Patient 3 waited 0.0 minutes at the pharmacy
-Patient 35 is a NewOP patient.
-Patient 35 arriving at the registration desk at 10:28:43 AM.
-Patient 35 starting registration process at 10:28:43 AM.
-Patient 20 finishing billing process at 10:30:31 AM.
-Patient 20 waited 9.073305336634318 minutes at the billing room
-Patient 20 arriving at the pharmacy at 10:30:31 AM.
-Patient 34 starting billing process at 10:30:31 AM.
-Patient 20 starting pharmacy process at 10:30:31 AM.
-Patient 36 is a IP patient.
-Patient 36 arriving at the xray room at 10:31:00 AM.
-Patient 23 finishing consultation with a doctor at 10:33:28 AM.
-Patient 23 waited 66.8103358944257 minutes at the consultation room
-Patient 23 arriving at the billing room at 10:33:28 AM.
-Patient 24 starting consultation with a doctor at 10:33:28 AM.
-Patient 29 finishing scan process at 10:33:28 AM.
-Patient 29 waited 21.01894787947337 minutes at the scan
-Patient 16 starting scan process at 10:33:28 AM.
-Patient 35 finishing registration process at 10:35:46 AM.
-Patient 35 waited 0.0 minutes at the registration desk
-Patient 35 arriving at the consultation room at 10:35:46 AM.
-Patient 34 finishing billing process at 10:40:31 AM.
-Patient 34 waited 14.395373070240021 minutes at the billing room
-Patient 34 arriving at the scan at 10:40:31 AM.
-Patient 21 starting billing process at 10:40:31 AM.
-Patient 0 finishing xray process at 10:40:54 AM.
-Patient 0 waited 134.33013137578965 minutes at the xray room
-Patient 0 arriving at the consultation room at 10:40:54 AM.
-Patient 22 starting xray process at 10:40:54 AM.
-Patient 24 finishing consultation with a doctor at 10:44:29 AM.
-Patient 24 waited 70.76786149342855 minutes at the consultation room
-Patient 24 arriving at the billing room at 10:44:29 AM.
-Patient 27 starting consultation with a doctor at 10:44:29 AM.
-Patient 37 is a IP patient.
-Patient 37 arriving at the xray room at 10:44:30 AM.
-Patient 20 finishing pharmacy process at 10:45:32 AM.
-Patient 20 waited 0.0 minutes at the pharmacy
-Patient 21 finishing billing process at 10:50:35 AM.
-Patient 21 waited 18.08671528895696 minutes at the billing room
-Patient 21 arriving at the xray room at 10:50:35 AM.
-Patient 23 starting billing process at 10:50:35 AM.
-Patient 27 finishing consultation with a doctor at 10:55:30 AM.
-Patient 27 waited 74.77701112826665 minutes at the consultation room
-Patient 27 arriving at the billing room at 10:55:30 AM.
-Patient 28 starting consultation with a doctor at 10:55:30 AM.
-Patient 23 finishing billing process at 11:00:38 AM.
-Patient 23 waited 17.11863902012507 minutes at the billing room
-Patient 23 arriving at the dressing desk at 11:00:38 AM.
-Patient 24 starting billing process at 11:00:38 AM.
-Patient 23 starting dressing process at 11:00:38 AM.
-Patient 16 finishing scan process at 11:01:30 AM.
-Patient 16 waited 38.99507449467977 minutes at the scan
-Patient 34 starting scan process at 11:01:30 AM.
-Patient 22 finishing xray process at 11:01:54 AM.
-Patient 22 waited 149.75073838233948 minutes at the xray room
-Patient 10 starting xray process at 11:01:54 AM.
-Patient 38 is a OldOP patient.
-Patient 38 arriving at the registration desk at 11:03:14 AM.
-Patient 39 is a IP patient.
-Patient 39 arriving at the xray room at 11:03:14 AM.
-Patient 38 starting registration process at 11:03:14 AM.
-Patient 28 finishing consultation with a doctor at 11:06:30 AM.
-Patient 28 waited 78.74133458534877 minutes at the consultation room
-Patient 28 arriving at the billing room at 11:06:30 AM.
-Patient 30 starting consultation with a doctor at 11:06:30 AM.
-Patient 38 finishing registration process at 11:10:18 AM.
+Patient 29 arriving at the billing room at 09:45:56 AM.
+Patient 9 finishing billing process at 09:47:07 AM.
+Patient 9 waited 12.80470669666926 minutes at the billing room
+Patient 9 arriving at the injection at 09:47:07 AM.
+Patient 10 starting billing process at 09:47:07 AM.
+Patient 9 starting injection process at 09:47:07 AM.
+Patient 11 finishing consultation with a doctor at 09:52:23 AM.
+Patient 11 waited 72.12329767942428 minutes at the consultation room
+Patient 11 arriving at the billing room at 09:52:23 AM.
+Patient 12 starting consultation with a doctor at 09:52:23 AM.
+Patient 30 is a OldOP patient.
+Patient 30 arriving at the registration desk at 09:56:56 AM.
+Patient 30 starting registration process at 09:56:56 AM.
+Patient 10 finishing billing process at 09:57:09 AM.
+Patient 10 waited 8.787450269858043 minutes at the billing room
+Patient 10 arriving at the injection at 09:57:09 AM.
+Patient 29 starting billing process at 09:57:09 AM.
+Patient 9 finishing injection process at 09:47:07 AM.
+Patient 9 waited 0.0 minutes at the injection
+Patient 10 starting injection process at 09:58:08 AM.
+Patient 30 finishing registration process at 10:03:57 AM.
+Patient 30 waited 0.0 minutes at the registration desk
+Patient 30 arriving at the consultation room at 10:03:57 AM.
+Patient 28 finishing scan process at 10:05:07 AM.
+Patient 28 waited 0.0 minutes at the scan
+Patient 22 finishing xray process at 10:06:15 AM.
+Patient 22 waited 85.27737994988759 minutes at the xray room
+Patient 1 starting xray process at 10:06:15 AM.
+Patient 12 finishing consultation with a doctor at 10:06:25 AM.
+Patient 12 waited 79.17279423077902 minutes at the consultation room
+Patient 12 arriving at the billing room at 10:06:25 AM.
+Patient 0 starting consultation with a doctor at 10:06:25 AM.
+Patient 29 finishing billing process at 10:07:11 AM.
+Patient 29 waited 11.2193780819575 minutes at the billing room
+Patient 29 arriving at the scan at 10:07:11 AM.
+Patient 11 starting billing process at 10:07:11 AM.
+Patient 29 starting scan process at 10:07:11 AM.
+Patient 31 is a IP patient.
+Patient 31 arriving at the xray room at 10:08:56 AM.
+Patient 10 finishing injection process at 09:58:08 AM.
+Patient 10 waited 0.9969263354937236 minutes at the injection
+Patient 32 is a NewOP patient.
+Patient 32 arriving at the registration desk at 10:09:56 AM.
+Patient 32 starting registration process at 10:09:56 AM.
+Patient 32 finishing registration process at 10:16:56 AM.
+Patient 32 waited 0.0 minutes at the registration desk
+Patient 32 arriving at the consultation room at 10:16:56 AM.
+Patient 11 finishing billing process at 10:17:15 AM.
+Patient 11 waited 14.798396571477253 minutes at the billing room
+Patient 11 arriving at the xray room at 10:17:15 AM.
+Patient 12 starting billing process at 10:17:15 AM.
+Patient 0 finishing consultation with a doctor at 10:20:26 AM.
+Patient 0 waited 84.33529903093974 minutes at the consultation room
+Patient 0 arriving at the billing room at 10:20:26 AM.
+Patient 16 starting consultation with a doctor at 10:20:26 AM.
+Patient 1 finishing xray process at 10:27:16 AM.
+Patient 1 waited 102.17424391110738 minutes at the xray room
+Patient 1 arriving at the billing room at 10:27:16 AM.
+Patient 7 starting xray process at 10:27:16 AM.
+Patient 12 finishing billing process at 10:27:16 AM.
+Patient 12 waited 10.8341206351916 minutes at the billing room
+Patient 12 arriving at the xray room at 10:27:16 AM.
+Patient 0 starting billing process at 10:27:16 AM.
+Patient 33 is a OldOP patient.
+Patient 33 arriving at the registration desk at 10:33:56 AM.
+Patient 33 starting registration process at 10:33:56 AM.
+Patient 16 finishing consultation with a doctor at 10:34:29 AM.
+Patient 16 waited 93.14763689438502 minutes at the consultation room
+Patient 16 arriving at the billing room at 10:34:29 AM.
+Patient 18 starting consultation with a doctor at 10:34:29 AM.
+Patient 34 is a IP patient.
+Patient 34 arriving at the xray room at 10:34:56 AM.
+Patient 29 finishing scan process at 10:35:13 AM.
+Patient 29 waited 0.0 minutes at the scan
+Patient 0 finishing billing process at 10:37:19 AM.
+Patient 0 waited 6.83541153271993 minutes at the billing room
+Patient 0 arriving at the pharmacy at 10:37:19 AM.
+Patient 1 starting billing process at 10:37:19 AM.
+Patient 0 starting pharmacy process at 10:37:19 AM.
+Patient 35 is a OldOP patient.
+Patient 35 arriving at the registration desk at 10:40:56 AM.
+Patient 33 finishing registration process at 10:40:58 AM.
+Patient 33 waited 0.0 minutes at the registration desk
+Patient 33 arriving at the consultation room at 10:40:58 AM.
+Patient 35 starting registration process at 10:40:58 AM.
+Patient 1 finishing billing process at 10:47:23 AM.
+Patient 1 waited 10.058305442333221 minutes at the billing room
+Patient 1 arriving at the pharmacy at 10:47:23 AM.
+Patient 16 starting billing process at 10:47:23 AM.
+Patient 35 finishing registration process at 10:48:00 AM.
+Patient 35 waited 0.041058468818664554 minutes at the registration desk
+Patient 35 arriving at the consultation room at 10:48:00 AM.
+Patient 7 finishing xray process at 10:48:18 AM.
+Patient 7 waited 81.10703920523325 minutes at the xray room
+Patient 7 arriving at the consultation room at 10:48:18 AM.
+Patient 26 starting xray process at 10:48:18 AM.
+Patient 18 finishing consultation with a doctor at 10:48:32 AM.
+Patient 18 waited 100.12516151269277 minutes at the consultation room
+Patient 18 arriving at the billing room at 10:48:32 AM.
+Patient 19 starting consultation with a doctor at 10:48:32 AM.
+Patient 0 finishing pharmacy process at 10:52:20 AM.
+Patient 0 waited 0.0 minutes at the pharmacy
+Patient 1 starting pharmacy process at 10:52:20 AM.
+Patient 16 finishing billing process at 10:57:25 AM.
+Patient 16 waited 12.896454187234243 minutes at the billing room
+Patient 16 arriving at the pharmacy at 10:57:25 AM.
+Patient 18 starting billing process at 10:57:25 AM.
+Patient 19 finishing consultation with a doctor at 11:02:33 AM.
+Patient 19 waited 107.13937395811081 minutes at the consultation room
+Patient 19 arriving at the billing room at 11:02:33 AM.
+Patient 20 starting consultation with a doctor at 11:02:33 AM.
+Patient 1 finishing pharmacy process at 11:07:23 AM.
+Patient 1 waited 4.955381127198537 minutes at the pharmacy
+Patient 16 starting pharmacy process at 11:07:23 AM.
+Patient 18 finishing billing process at 11:07:29 AM.
+Patient 18 waited 8.892703894774119 minutes at the billing room
+Patient 18 arriving at the xray room at 11:07:29 AM.
+Patient 19 starting billing process at 11:07:29 AM.
+Patient 36 is a OldOP patient.
+Patient 36 arriving at the registration desk at 11:07:56 AM.
+Patient 36 starting registration process at 11:07:56 AM.
+Patient 26 finishing xray process at 11:09:22 AM.
+Patient 26 waited 91.32657016913096 minutes at the xray room
+Patient 8 starting xray process at 11:09:22 AM.
+Patient 36 finishing registration process at 11:15:00 AM.
+Patient 36 waited 0.0 minutes at the registration desk
+Patient 36 arriving at the consultation room at 11:15:00 AM.
+Patient 20 finishing consultation with a doctor at 11:16:37 AM.
+Patient 20 waited 114.14606531063716 minutes at the consultation room
+Patient 20 arriving at the billing room at 11:16:37 AM.
+Patient 23 starting consultation with a doctor at 11:16:37 AM.
+Patient 19 finishing billing process at 11:17:32 AM.
+Patient 19 waited 4.928621399402618 minutes at the billing room
+Patient 19 arriving at the pharmacy at 11:17:32 AM.
+Patient 20 starting billing process at 11:17:32 AM.
+Patient 37 is a NewOP patient.
+Patient 37 arriving at the registration desk at 11:19:56 AM.
+Patient 37 starting registration process at 11:19:56 AM.
+Patient 16 finishing pharmacy process at 11:22:27 AM.
+Patient 16 waited 9.965357514222463 minutes at the pharmacy
+Patient 19 starting pharmacy process at 11:22:27 AM.
+Patient 37 finishing registration process at 11:26:59 AM.
+Patient 37 waited 0.0 minutes at the registration desk
+Patient 37 arriving at the consultation room at 11:26:59 AM.
+Patient 20 finishing billing process at 11:27:34 AM.
+Patient 20 waited 0.923342780272166 minutes at the billing room
+Patient 20 arriving at the pharmacy at 11:27:34 AM.
+Patient 38 is a NewOP patient.
+Patient 38 arriving at the registration desk at 11:27:56 AM.
+Patient 38 starting registration process at 11:27:56 AM.
+Patient 8 finishing xray process at 11:30:24 AM.
+Patient 8 waited 102.3691296339035 minutes at the xray room
+Patient 8 arriving at the billing room at 11:30:24 AM.
+Patient 31 starting xray process at 11:30:24 AM.
+Patient 8 starting billing process at 11:30:24 AM.
+Patient 23 finishing consultation with a doctor at 11:30:40 AM.
+Patient 23 waited 121.13274189631144 minutes at the consultation room
+Patient 23 left the hospital at 11:30:40 AM
+Patient 24 starting consultation with a doctor at 11:30:40 AM.
+Patient 38 finishing registration process at 11:34:58 AM.
 Patient 38 waited 0.0 minutes at the registration desk
-Patient 38 arriving at the consultation room at 11:10:18 AM.
-Patient 24 finishing billing process at 11:10:39 AM.
-Patient 24 waited 16.147791949907937 minutes at the billing room
-Patient 24 arriving at the injection at 11:10:39 AM.
-Patient 27 starting billing process at 11:10:39 AM.
-Patient 24 starting injection process at 11:10:39 AM.
-Patient 40 is a IP patient.
-Patient 40 arriving at the xray room at 11:12:38 AM.
-Patient 23 finishing dressing process at 11:15:41 AM.
-Patient 23 waited 0.0 minutes at the dressing desk
-Patient 30 finishing consultation with a doctor at 11:17:34 AM.
-Patient 30 waited 82.68609102169673 minutes at the consultation room
-Patient 30 arriving at the billing room at 11:17:34 AM.
-Patient 31 starting consultation with a doctor at 11:17:34 AM.
-Patient 27 finishing billing process at 11:20:40 AM.
-Patient 27 waited 15.164526863892872 minutes at the billing room
-Patient 27 arriving at the pharmacy at 11:20:40 AM.
-Patient 28 starting billing process at 11:20:40 AM.
-Patient 27 starting pharmacy process at 11:20:40 AM.
-Patient 24 finishing injection process at 11:10:39 AM.
-Patient 24 waited 0.0 minutes at the injection
-Patient 10 finishing xray process at 11:22:56 AM.
-Patient 10 waited 117.66586030324301 minutes at the xray room
-Patient 10 arriving at the billing room at 11:22:56 AM.
-Patient 33 starting xray process at 11:22:56 AM.
-Patient 31 finishing consultation with a doctor at 11:28:38 AM.
-Patient 31 waited 86.69382854700089 minutes at the consultation room
-Patient 31 arriving at the billing room at 11:28:38 AM.
-Patient 32 starting consultation with a doctor at 11:28:38 AM.
-Patient 34 finishing scan process at 11:29:31 AM.
-Patient 34 waited 20.980647055308022 minutes at the scan
-Patient 28 finishing billing process at 11:30:41 AM.
-Patient 28 waited 14.16635324160258 minutes at the billing room
-Patient 28 arriving at the dressing desk at 11:30:41 AM.
-Patient 30 starting billing process at 11:30:41 AM.
-Patient 28 starting dressing process at 11:30:41 AM.
-Patient 27 finishing pharmacy process at 11:35:43 AM.
-Patient 27 waited 0.0 minutes at the pharmacy
-Patient 41 is a NewOP patient.
-Patient 41 arriving at the registration desk at 11:39:39 AM.
-Patient 41 starting registration process at 11:39:39 AM.
-Patient 32 finishing consultation with a doctor at 11:39:39 AM.
-Patient 32 waited 90.70473721027375 minutes at the consultation room
-Patient 32 left the hospital at 11:39:39 AM
-Patient 14 starting consultation with a doctor at 11:39:39 AM.
-Patient 30 finishing billing process at 11:40:44 AM.
-Patient 30 waited 13.102300600210826 minutes at the billing room
-Patient 30 arriving at the xray room at 11:40:44 AM.
-Patient 10 starting billing process at 11:40:44 AM.
-Patient 33 finishing xray process at 11:43:57 AM.
-Patient 33 waited 62.45602826674779 minutes at the xray room
-Patient 33 arriving at the consultation room at 11:43:57 AM.
-Patient 36 starting xray process at 11:43:57 AM.
-Patient 28 finishing dressing process at 11:45:46 AM.
-Patient 28 waited 0.0 minutes at the dressing desk
-Patient 41 finishing registration process at 11:46:40 AM.
-Patient 41 waited 0.0 minutes at the registration desk
-Patient 41 arriving at the consultation room at 11:46:40 AM.
-Patient 14 finishing consultation with a doctor at 11:50:41 AM.
-Patient 14 waited 79.82669370571772 minutes at the consultation room
-Patient 14 arriving at the billing room at 11:50:41 AM.
-Patient 35 starting consultation with a doctor at 11:50:41 AM.
-Patient 10 finishing billing process at 11:50:47 AM.
-Patient 10 waited 17.79334738254547 minutes at the billing room
-Patient 10 arriving at the pharmacy at 11:50:47 AM.
-Patient 31 starting billing process at 11:50:47 AM.
-Patient 10 starting pharmacy process at 11:50:47 AM.
-Patient 42 is a OldOP patient.
-Patient 42 arriving at the registration desk at 11:53:40 AM.
-Patient 42 starting registration process at 11:53:40 AM.
-Patient 43 is a OldOPScan patient.
-Patient 43 arriving at the billing room at 12:00:09 PM.
-Patient 42 finishing registration process at 12:00:42 PM.
-Patient 42 waited 0.0 minutes at the registration desk
-Patient 42 arriving at the consultation room at 12:00:42 PM.
-Patient 31 finishing billing process at 12:00:49 PM.
-Patient 31 waited 22.146158854166668 minutes at the billing room
-Patient 31 arriving at the pharmacy at 12:00:49 PM.
-Patient 14 starting billing process at 12:00:49 PM.
-Patient 35 finishing consultation with a doctor at 12:01:43 PM.
-Patient 35 waited 74.9012471874555 minutes at the consultation room
-Patient 35 arriving at the billing room at 12:01:43 PM.
-Patient 0 starting consultation with a doctor at 12:01:43 PM.
-Patient 36 finishing xray process at 12:04:59 PM.
-Patient 36 waited 72.95853052934011 minutes at the xray room
-Patient 37 starting xray process at 12:04:59 PM.
-Patient 10 finishing pharmacy process at 12:05:48 PM.
-Patient 10 waited 0.0 minutes at the pharmacy
-Patient 31 starting pharmacy process at 12:05:48 PM.
-Patient 14 finishing billing process at 12:10:52 PM.
-Patient 14 waited 10.146084062258403 minutes at the billing room
-Patient 14 arriving at the pharmacy at 12:10:52 PM.
-Patient 43 starting billing process at 12:10:52 PM.
-Patient 0 finishing consultation with a doctor at 12:12:44 PM.
-Patient 0 waited 80.82404814163844 minutes at the consultation room
-Patient 0 arriving at the billing room at 12:12:44 PM.
-Patient 38 starting consultation with a doctor at 12:12:44 PM.
-Patient 44 is a NewOP patient.
-Patient 44 arriving at the registration desk at 12:18:33 PM.
-Patient 44 starting registration process at 12:18:33 PM.
-Patient 31 finishing pharmacy process at 12:20:53 PM.
-Patient 31 waited 4.97857309182485 minutes at the pharmacy
-Patient 14 starting pharmacy process at 12:20:53 PM.
-Patient 43 finishing billing process at 12:20:54 PM.
-Patient 43 waited 10.723032120863596 minutes at the billing room
-Patient 43 arriving at the xray room at 12:20:54 PM.
-Patient 35 starting billing process at 12:20:54 PM.
-Patient 38 finishing consultation with a doctor at 12:23:46 PM.
-Patient 38 waited 62.43165882825851 minutes at the consultation room
-Patient 38 left the hospital at 12:23:46 PM
-Patient 33 starting consultation with a doctor at 12:23:46 PM.
-Patient 44 finishing registration process at 12:25:33 PM.
-Patient 44 waited 0.0 minutes at the registration desk
-Patient 44 arriving at the consultation room at 12:25:33 PM.
-Patient 37 finishing xray process at 12:26:03 PM.
-Patient 37 waited 80.49688852230707 minutes at the xray room
-Patient 21 starting xray process at 12:26:03 PM.
-Patient 35 finishing billing process at 12:30:57 PM.
-Patient 35 waited 19.180455044905344 minutes at the billing room
-Patient 35 arriving at the pharmacy at 12:30:57 PM.
-Patient 0 starting billing process at 12:30:57 PM.
-Patient 33 finishing consultation with a doctor at 12:34:49 PM.
-Patient 33 waited 39.81611335674922 minutes at the consultation room
-Patient 33 arriving at the billing room at 12:34:49 PM.
-Patient 41 starting consultation with a doctor at 12:34:49 PM.
-Patient 14 finishing pharmacy process at 12:35:54 PM.
-Patient 14 waited 10.018410181999206 minutes at the pharmacy
-Patient 35 starting pharmacy process at 12:35:54 PM.
-Patient 0 finishing billing process at 12:41:00 PM.
-Patient 0 waited 18.219845736026762 minutes at the billing room
-Patient 0 arriving at the dressing desk at 12:41:00 PM.
-Patient 33 starting billing process at 12:41:00 PM.
-Patient 0 starting dressing process at 12:41:00 PM.
-Patient 41 finishing consultation with a doctor at 12:45:52 PM.
-Patient 41 waited 48.14453804095586 minutes at the consultation room
-Patient 41 arriving at the billing room at 12:45:52 PM.
-Patient 42 starting consultation with a doctor at 12:45:52 PM.
-Patient 21 finishing xray process at 12:47:05 PM.
-Patient 21 waited 95.46156004667282 minutes at the xray room
-Patient 21 arriving at the consultation room at 12:47:05 PM.
-Patient 39 starting xray process at 12:47:05 PM.
-Patient 45 is a NewOP patient.
-Patient 45 arriving at the registration desk at 12:50:24 PM.
-Patient 45 starting registration process at 12:50:24 PM.
-Patient 35 finishing pharmacy process at 12:50:55 PM.
-Patient 35 waited 4.94721340338389 minutes at the pharmacy
-Patient 33 finishing billing process at 12:51:01 PM.
-Patient 33 waited 6.178456048170726 minutes at the billing room
-Patient 33 arriving at the pharmacy at 12:51:01 PM.
-Patient 41 starting billing process at 12:51:01 PM.
-Patient 33 starting pharmacy process at 12:51:01 PM.
-Patient 0 finishing dressing process at 12:56:01 PM.
-Patient 0 waited 0.0 minutes at the dressing desk
-Patient 42 finishing consultation with a doctor at 12:56:56 PM.
-Patient 42 waited 45.16607226133347 minutes at the consultation room
-Patient 44 starting consultation with a doctor at 12:56:56 PM.
-Patient 45 finishing registration process at 12:57:28 PM.
-Patient 45 waited 0.0 minutes at the registration desk
-Patient 45 arriving at the consultation room at 12:57:28 PM.
-Patient 41 finishing billing process at 13:01:03 PM.
-Patient 41 waited 5.152341941992442 minutes at the billing room
-Patient 41 arriving at the xray room at 13:01:03 PM.
-Patient 33 finishing pharmacy process at 13:06:05 PM.
-Patient 33 waited 0.0 minutes at the pharmacy
-Patient 44 finishing consultation with a doctor at 13:07:59 PM.
-Patient 44 waited 31.38640341758728 minutes at the consultation room
-Patient 44 arriving at the billing room at 13:07:59 PM.
-Patient 21 starting consultation with a doctor at 13:07:59 PM.
-Patient 44 starting billing process at 13:07:59 PM.
-Patient 39 finishing xray process at 13:08:06 PM.
-Patient 39 waited 103.85684314568837 minutes at the xray room
-Patient 40 starting xray process at 13:08:06 PM.
-Patient 44 finishing billing process at 13:18:04 PM.
-Patient 44 waited 0.0 minutes at the billing room
-Patient 44 arriving at the xray room at 13:18:04 PM.
-Patient 21 finishing consultation with a doctor at 13:19:00 PM.
-Patient 21 waited 20.901851789156595 minutes at the consultation room
-Patient 21 arriving at the billing room at 13:19:00 PM.
-Patient 45 starting consultation with a doctor at 13:19:00 PM.
-Patient 21 starting billing process at 13:19:00 PM.
-Patient 46 is a OldOP patient.
-Patient 46 arriving at the registration desk at 13:19:57 PM.
-Patient 46 starting registration process at 13:19:57 PM.
-Patient 46 finishing registration process at 13:27:01 PM.
-Patient 46 waited 0.0 minutes at the registration desk
-Patient 46 arriving at the consultation room at 13:27:01 PM.
-Patient 21 finishing billing process at 13:29:05 PM.
-Patient 21 waited 0.0 minutes at the billing room
-Patient 21 arriving at the dressing desk at 13:29:05 PM.
-Patient 21 starting dressing process at 13:29:05 PM.
-Patient 40 finishing xray process at 13:29:09 PM.
-Patient 40 waited 115.47133597930272 minutes at the xray room
-Patient 30 starting xray process at 13:29:09 PM.
-Patient 45 finishing consultation with a doctor at 13:30:04 PM.
-Patient 45 waited 21.539422794183096 minutes at the consultation room
-Patient 45 arriving at the billing room at 13:30:04 PM.
-Patient 46 starting consultation with a doctor at 13:30:04 PM.
-Patient 45 starting billing process at 13:30:04 PM.
-Patient 47 is a NewOP patient.
-Patient 47 arriving at the registration desk at 13:39:26 PM.
-Patient 47 starting registration process at 13:39:26 PM.
-Patient 45 finishing billing process at 13:40:09 PM.
-Patient 45 waited 0.0 minutes at the billing room
-Patient 45 arriving at the dressing desk at 13:40:09 PM.
-Patient 46 finishing consultation with a doctor at 13:41:08 PM.
-Patient 46 waited 3.0557472507158914 minutes at the consultation room
-Patient 46 arriving at the billing room at 13:41:08 PM.
-Patient 46 starting billing process at 13:41:08 PM.
-Patient 21 finishing dressing process at 13:44:06 PM.
-Patient 21 waited 0.0 minutes at the dressing desk
-Patient 45 starting dressing process at 13:44:06 PM.
-Patient 47 finishing registration process at 13:46:28 PM.
-Patient 47 waited 0.0 minutes at the registration desk
-Patient 47 arriving at the consultation room at 13:46:28 PM.
-Patient 47 starting consultation with a doctor at 13:46:28 PM.
-Patient 30 finishing xray process at 13:50:14 PM.
-Patient 30 waited 108.41863105297088 minutes at the xray room
-Patient 30 arriving at the consultation room at 13:50:14 PM.
-Patient 43 starting xray process at 13:50:14 PM.
-Patient 46 finishing billing process at 13:51:12 PM.
-Patient 46 waited 0.0 minutes at the billing room
-Patient 46 arriving at the pharmacy at 13:51:12 PM.
-Patient 46 starting pharmacy process at 13:51:12 PM.
-Patient 47 finishing consultation with a doctor at 13:57:29 PM.
-Patient 47 waited 0.0 minutes at the consultation room
-Patient 47 arriving at the billing room at 13:57:29 PM.
-Patient 30 starting consultation with a doctor at 13:57:29 PM.
-Patient 47 starting billing process at 13:57:29 PM.
-Patient 48 is a NewOP patient.
-Patient 48 arriving at the registration desk at 13:57:57 PM.
-Patient 48 starting registration process at 13:57:57 PM.
-Patient 45 finishing dressing process at 13:59:08 PM.
-Patient 45 waited 3.9438559730847675 minutes at the dressing desk
-Patient 48 finishing registration process at 14:05:00 PM.
-Patient 48 waited 0.0 minutes at the registration desk
-Patient 48 arriving at the consultation room at 14:05:00 PM.
-Patient 46 finishing pharmacy process at 14:06:15 PM.
-Patient 46 waited 0.0 minutes at the pharmacy
-Patient 47 finishing billing process at 14:07:34 PM.
-Patient 47 waited 0.0 minutes at the billing room
-Patient 47 arriving at the scan at 14:07:34 PM.
-Patient 47 starting scan process at 14:07:34 PM.
-Patient 30 finishing consultation with a doctor at 14:08:33 PM.
-Patient 30 waited 7.264844890435537 minutes at the consultation room
-Patient 30 arriving at the billing room at 14:08:33 PM.
-Patient 48 starting consultation with a doctor at 14:08:33 PM.
-Patient 30 starting billing process at 14:08:33 PM.
-Patient 43 finishing xray process at 14:11:14 PM.
-Patient 43 waited 89.32898842096328 minutes at the xray room
-Patient 41 starting xray process at 14:11:14 PM.
-Patient 30 finishing billing process at 14:18:37 PM.
+Patient 38 arriving at the consultation room at 11:34:58 AM.
+Patient 19 finishing pharmacy process at 11:37:28 AM.
+Patient 19 waited 4.917676750818888 minutes at the pharmacy
+Patient 20 starting pharmacy process at 11:37:28 AM.
+Patient 8 finishing billing process at 11:40:27 AM.
+Patient 8 waited 0.0 minutes at the billing room
+Patient 8 arriving at the pharmacy at 11:40:27 AM.
+Patient 24 finishing consultation with a doctor at 11:44:44 AM.
+Patient 24 waited 128.11507591803868 minutes at the consultation room
+Patient 24 arriving at the billing room at 11:44:44 AM.
+Patient 25 starting consultation with a doctor at 11:44:44 AM.
+Patient 24 starting billing process at 11:44:44 AM.
+Patient 31 finishing xray process at 11:51:25 AM.
+Patient 31 waited 81.46932667096456 minutes at the xray room
+Patient 11 starting xray process at 11:51:25 AM.
+Patient 20 finishing pharmacy process at 11:52:28 AM.
+Patient 20 waited 9.895276963710785 minutes at the pharmacy
+Patient 8 starting pharmacy process at 11:52:28 AM.
+Patient 39 is a NewOP patient.
+Patient 39 arriving at the registration desk at 11:52:55 AM.
+Patient 39 starting registration process at 11:52:55 AM.
+Patient 24 finishing billing process at 11:54:48 AM.
+Patient 24 waited 0.0 minutes at the billing room
+Patient 24 arriving at the xray room at 11:54:48 AM.
+Patient 25 finishing consultation with a doctor at 11:58:45 AM.
+Patient 25 waited 135.1865317106247 minutes at the consultation room
+Patient 25 arriving at the billing room at 11:58:45 AM.
+Patient 27 starting consultation with a doctor at 11:58:45 AM.
+Patient 25 starting billing process at 11:58:45 AM.
+Patient 39 finishing registration process at 11:59:56 AM.
+Patient 39 waited 0.0 minutes at the registration desk
+Patient 39 arriving at the consultation room at 11:59:56 AM.
+Patient 8 finishing pharmacy process at 12:07:33 PM.
+Patient 8 waited 12.023057639598846 minutes at the pharmacy
+Patient 25 finishing billing process at 12:08:50 PM.
+Patient 25 waited 0.0 minutes at the billing room
+Patient 25 arriving at the xray room at 12:08:50 PM.
+Patient 11 finishing xray process at 12:12:25 PM.
+Patient 11 waited 94.16697489817938 minutes at the xray room
+Patient 11 arriving at the consultation room at 12:12:25 PM.
+Patient 12 starting xray process at 12:12:25 PM.
+Patient 27 finishing consultation with a doctor at 12:12:47 PM.
+Patient 27 waited 142.14990567366283 minutes at the consultation room
+Patient 27 arriving at the billing room at 12:12:47 PM.
+Patient 30 starting consultation with a doctor at 12:12:47 PM.
+Patient 27 starting billing process at 12:12:47 PM.
+Patient 27 finishing billing process at 12:22:50 PM.
+Patient 27 waited 0.0 minutes at the billing room
+Patient 27 arriving at the xray room at 12:22:50 PM.
+Patient 40 is a OldOP patient.
+Patient 40 arriving at the registration desk at 12:25:54 PM.
+Patient 40 starting registration process at 12:25:54 PM.
+Patient 30 finishing consultation with a doctor at 12:26:51 PM.
+Patient 30 waited 128.83913217782975 minutes at the consultation room
+Patient 30 arriving at the billing room at 12:26:51 PM.
+Patient 32 starting consultation with a doctor at 12:26:51 PM.
+Patient 30 starting billing process at 12:26:51 PM.
+Patient 40 finishing registration process at 12:32:57 PM.
+Patient 40 waited 0.0 minutes at the registration desk
+Patient 40 arriving at the consultation room at 12:32:57 PM.
+Patient 12 finishing xray process at 12:33:30 PM.
+Patient 12 waited 105.1572411417961 minutes at the xray room
+Patient 12 arriving at the consultation room at 12:33:30 PM.
+Patient 34 starting xray process at 12:33:30 PM.
+Patient 30 finishing billing process at 12:36:51 PM.
 Patient 30 waited 0.0 minutes at the billing room
-Patient 30 arriving at the dressing desk at 14:18:37 PM.
-Patient 30 starting dressing process at 14:18:37 PM.
-Patient 48 finishing consultation with a doctor at 14:19:38 PM.
-Patient 48 waited 3.5601958870887755 minutes at the consultation room
-Patient 48 arriving at the billing room at 14:19:38 PM.
-Patient 48 starting billing process at 14:19:38 PM.
+Patient 30 arriving at the injection at 12:36:51 PM.
+Patient 30 starting injection process at 12:36:51 PM.
+Patient 32 finishing consultation with a doctor at 12:40:52 PM.
+Patient 32 waited 129.9064445535342 minutes at the consultation room
+Patient 32 arriving at the billing room at 12:40:52 PM.
+Patient 33 starting consultation with a doctor at 12:40:52 PM.
+Patient 32 starting billing process at 12:40:52 PM.
+Patient 41 is a OldOP patient.
+Patient 41 arriving at the registration desk at 12:47:53 PM.
+Patient 41 starting registration process at 12:47:53 PM.
+Patient 30 finishing injection process at 12:36:51 PM.
+Patient 30 waited 0.0 minutes at the injection
+Patient 32 finishing billing process at 12:50:52 PM.
+Patient 32 waited 0.0 minutes at the billing room
+Patient 32 arriving at the pharmacy at 12:50:52 PM.
+Patient 32 starting pharmacy process at 12:50:52 PM.
+Patient 34 finishing xray process at 12:54:34 PM.
+Patient 34 waited 118.57657637198766 minutes at the xray room
+Patient 18 starting xray process at 12:54:34 PM.
+Patient 33 finishing consultation with a doctor at 12:54:53 PM.
+Patient 33 waited 119.90032054980595 minutes at the consultation room
+Patient 33 left the hospital at 12:54:53 PM
+Patient 35 starting consultation with a doctor at 12:54:53 PM.
+Patient 41 finishing registration process at 12:54:56 PM.
+Patient 41 waited 0.0 minutes at the registration desk
+Patient 41 arriving at the consultation room at 12:54:56 PM.
+Patient 42 is a NewOP patient.
+Patient 42 arriving at the registration desk at 13:05:53 PM.
+Patient 42 starting registration process at 13:05:53 PM.
+Patient 32 finishing pharmacy process at 13:05:55 PM.
+Patient 32 waited 0.0 minutes at the pharmacy
+Patient 35 finishing consultation with a doctor at 13:08:54 PM.
+Patient 35 waited 126.88081789811453 minutes at the consultation room
+Patient 35 arriving at the billing room at 13:08:54 PM.
+Patient 7 starting consultation with a doctor at 13:08:54 PM.
+Patient 35 starting billing process at 13:08:54 PM.
+Patient 42 finishing registration process at 13:12:55 PM.
+Patient 42 waited 0.0 minutes at the registration desk
+Patient 42 arriving at the consultation room at 13:12:55 PM.
+Patient 18 finishing xray process at 13:15:34 PM.
+Patient 18 waited 107.08295568227769 minutes at the xray room
+Patient 18 arriving at the billing room at 13:15:34 PM.
+Patient 24 starting xray process at 13:15:34 PM.
+Patient 35 finishing billing process at 13:18:57 PM.
+Patient 35 waited 0.0 minutes at the billing room
+Patient 35 arriving at the xray room at 13:18:57 PM.
+Patient 18 starting billing process at 13:18:57 PM.
+Patient 7 finishing consultation with a doctor at 13:22:54 PM.
+Patient 7 waited 140.603127237161 minutes at the consultation room
+Patient 7 arriving at the billing room at 13:22:54 PM.
+Patient 36 starting consultation with a doctor at 13:22:54 PM.
+Patient 43 is a NewOP patient.
+Patient 43 arriving at the registration desk at 13:27:53 PM.
+Patient 43 starting registration process at 13:27:53 PM.
+Patient 18 finishing billing process at 13:28:59 PM.
+Patient 18 waited 3.3758673628171283 minutes at the billing room
+Patient 18 arriving at the pharmacy at 13:28:59 PM.
+Patient 7 starting billing process at 13:28:59 PM.
+Patient 18 starting pharmacy process at 13:28:59 PM.
+Patient 43 finishing registration process at 13:34:53 PM.
+Patient 43 waited 0.0 minutes at the registration desk
+Patient 43 arriving at the consultation room at 13:34:53 PM.
+Patient 24 finishing xray process at 13:36:36 PM.
+Patient 24 waited 80.76066073179246 minutes at the xray room
+Patient 24 arriving at the consultation room at 13:36:36 PM.
+Patient 25 starting xray process at 13:36:36 PM.
+Patient 36 finishing consultation with a doctor at 13:36:54 PM.
+Patient 36 waited 127.91254242658616 minutes at the consultation room
+Patient 36 arriving at the billing room at 13:36:54 PM.
+Patient 37 starting consultation with a doctor at 13:36:54 PM.
+Patient 7 finishing billing process at 13:38:59 PM.
+Patient 7 waited 6.075167429447174 minutes at the billing room
+Patient 7 arriving at the dressing desk at 13:38:59 PM.
+Patient 36 starting billing process at 13:38:59 PM.
+Patient 7 starting dressing process at 13:38:59 PM.
+Patient 44 is a OldOPScan patient.
+Patient 44 arriving at the billing room at 13:42:52 PM.
+Patient 45 is a IP patient.
+Patient 45 arriving at the xray room at 13:42:52 PM.
+Patient 18 finishing pharmacy process at 13:44:00 PM.
+Patient 18 waited 0.0 minutes at the pharmacy
+Patient 36 finishing billing process at 13:49:02 PM.
+Patient 36 waited 2.0825818300247194 minutes at the billing room
+Patient 36 arriving at the xray room at 13:49:02 PM.
+Patient 44 starting billing process at 13:49:02 PM.
+Patient 37 finishing consultation with a doctor at 13:50:57 PM.
+Patient 37 waited 129.91714222431182 minutes at the consultation room
+Patient 37 arriving at the billing room at 13:50:57 PM.
+Patient 38 starting consultation with a doctor at 13:50:57 PM.
+Patient 7 finishing dressing process at 13:54:03 PM.
+Patient 7 waited 0.0 minutes at the dressing desk
+Patient 46 is a OldOPScan patient.
+Patient 46 arriving at the billing room at 13:55:52 PM.
+Patient 25 finishing xray process at 13:57:39 PM.
+Patient 25 waited 87.77307507594426 minutes at the xray room
+Patient 25 arriving at the consultation room at 13:57:39 PM.
+Patient 27 starting xray process at 13:57:39 PM.
+Patient 44 finishing billing process at 13:59:02 PM.
+Patient 44 waited 6.170184016227722 minutes at the billing room
+Patient 44 arriving at the xray room at 13:59:02 PM.
+Patient 37 starting billing process at 13:59:02 PM.
+Patient 38 finishing consultation with a doctor at 14:05:00 PM.
+Patient 38 waited 135.98125269412995 minutes at the consultation room
+Patient 38 arriving at the billing room at 14:05:00 PM.
+Patient 39 starting consultation with a doctor at 14:05:00 PM.
+Patient 47 is a OldOPScan patient.
+Patient 47 arriving at the billing room at 14:07:52 PM.
+Patient 37 finishing billing process at 14:09:07 PM.
+Patient 37 waited 8.09226360321045 minutes at the billing room
+Patient 37 arriving at the pharmacy at 14:09:07 PM.
+Patient 46 starting billing process at 14:09:07 PM.
+Patient 37 starting pharmacy process at 14:09:07 PM.
+Patient 27 finishing xray process at 14:18:41 PM.
+Patient 27 waited 94.82439572016398 minutes at the xray room
+Patient 27 arriving at the consultation room at 14:18:41 PM.
+Patient 35 starting xray process at 14:18:41 PM.
+Patient 39 finishing consultation with a doctor at 14:19:01 PM.
+Patient 39 waited 125.07408456802368 minutes at the consultation room
+Patient 39 arriving at the billing room at 14:19:01 PM.
+Patient 11 starting consultation with a doctor at 14:19:01 PM.
+Patient 46 finishing billing process at 14:19:08 PM.
+Patient 46 waited 13.254230988025665 minutes at the billing room
+Patient 46 arriving at the xray room at 14:19:08 PM.
+Patient 38 starting billing process at 14:19:08 PM.
+Patient 48 is a OldOP patient.
+Patient 48 arriving at the registration desk at 14:19:51 PM.
+Patient 48 starting registration process at 14:19:51 PM.
+Patient 37 finishing pharmacy process at 14:24:08 PM.
+Patient 37 waited 0.0 minutes at the pharmacy
+Patient 48 finishing registration process at 14:26:52 PM.
+Patient 48 waited 0.0 minutes at the registration desk
+Patient 48 arriving at the consultation room at 14:26:52 PM.
 Patient 49 is a NewOP patient.
-Patient 49 arriving at the registration desk at 14:19:59 PM.
-Patient 49 starting registration process at 14:19:59 PM.
-Patient 49 finishing registration process at 14:27:02 PM.
+Patient 49 arriving at the registration desk at 14:27:50 PM.
+Patient 49 starting registration process at 14:27:50 PM.
+Patient 38 finishing billing process at 14:29:11 PM.
+Patient 38 waited 14.123832221825918 minutes at the billing room
+Patient 38 arriving at the scan at 14:29:11 PM.
+Patient 47 starting billing process at 14:29:11 PM.
+Patient 38 starting scan process at 14:29:11 PM.
+Patient 11 finishing consultation with a doctor at 14:33:03 PM.
+Patient 11 waited 126.59042028983434 minutes at the consultation room
+Patient 40 starting consultation with a doctor at 14:33:03 PM.
+Patient 49 finishing registration process at 14:34:51 PM.
 Patient 49 waited 0.0 minutes at the registration desk
-Patient 49 arriving at the consultation room at 14:27:02 PM.
-Patient 49 starting consultation with a doctor at 14:27:02 PM.
-Patient 48 finishing billing process at 14:29:41 PM.
-Patient 48 waited 0.0 minutes at the billing room
-Patient 48 arriving at the injection at 14:29:41 PM.
-Patient 48 starting injection process at 14:29:41 PM.
-Patient 41 finishing xray process at 14:32:15 PM.
-Patient 41 waited 70.18482936620713 minutes at the xray room
-Patient 41 arriving at the consultation room at 14:32:15 PM.
-Patient 44 starting xray process at 14:32:15 PM.
-Patient 30 finishing dressing process at 14:33:41 PM.
-Patient 30 waited 0.0 minutes at the dressing desk
-Patient 47 finishing scan process at 14:35:37 PM.
-Patient 47 waited 0.0 minutes at the scan
-Patient 50 is a OldOP patient.
-Patient 50 arriving at the registration desk at 14:36:16 PM.
-Patient 50 starting registration process at 14:36:16 PM.
-Patient 51 is a OldOPScan patient.
-Patient 51 arriving at the billing room at 14:37:16 PM.
-Patient 51 starting billing process at 14:37:16 PM.
-Patient 49 finishing consultation with a doctor at 14:38:05 PM.
-Patient 49 waited 0.0 minutes at the consultation room
-Patient 49 arriving at the billing room at 14:38:05 PM.
-Patient 41 starting consultation with a doctor at 14:38:05 PM.
-Patient 48 finishing injection process at 14:29:41 PM.
-Patient 48 waited 0.0 minutes at the injection
-Patient 50 finishing registration process at 14:43:18 PM.
-Patient 50 waited 0.0 minutes at the registration desk
-Patient 50 arriving at the consultation room at 14:43:18 PM.
+Patient 49 arriving at the consultation room at 14:34:51 PM.
+Patient 50 is a OldOPScan patient.
+Patient 50 arriving at the billing room at 14:37:50 PM.
+Patient 47 finishing billing process at 14:39:14 PM.
+Patient 47 waited 21.31944477558136 minutes at the billing room
+Patient 47 arriving at the scan at 14:39:14 PM.
+Patient 39 starting billing process at 14:39:14 PM.
+Patient 35 finishing xray process at 14:39:45 PM.
+Patient 35 waited 59.739095004399616 minutes at the xray room
+Patient 35 arriving at the billing room at 14:39:45 PM.
+Patient 45 starting xray process at 14:39:45 PM.
+Patient 40 finishing consultation with a doctor at 14:47:05 PM.
+Patient 40 waited 120.10092908143997 minutes at the consultation room
+Patient 40 arriving at the billing room at 14:47:05 PM.
+Patient 12 starting consultation with a doctor at 14:47:05 PM.
+Patient 39 finishing billing process at 14:49:18 PM.
+Patient 39 waited 20.21691019932429 minutes at the billing room
+Patient 39 arriving at the xray room at 14:49:18 PM.
+Patient 50 starting billing process at 14:49:18 PM.
+Patient 38 finishing scan process at 14:57:13 PM.
+Patient 38 waited 0.0 minutes at the scan
+Patient 38 arriving at the billing room at 14:57:13 PM.
+Patient 47 starting scan process at 14:57:13 PM.
+Patient 51 is a OldOP patient.
+Patient 51 arriving at the registration desk at 14:57:49 PM.
+Patient 51 starting registration process at 14:57:49 PM.
+Patient 50 finishing billing process at 14:59:23 PM.
+Patient 50 waited 11.480671922365824 minutes at the billing room
+Patient 50 arriving at the scan at 14:59:23 PM.
+Patient 35 starting billing process at 14:59:23 PM.
+Patient 45 finishing xray process at 15:00:46 PM.
+Patient 45 waited 56.89384368260701 minutes at the xray room
+Patient 36 starting xray process at 15:00:46 PM.
+Patient 12 finishing consultation with a doctor at 15:01:05 PM.
+Patient 12 waited 133.58465460538864 minutes at the consultation room
+Patient 12 arriving at the pharmacy at 15:01:05 PM.
+Patient 41 starting consultation with a doctor at 15:01:05 PM.
+Patient 12 starting pharmacy process at 15:01:05 PM.
+Patient 51 finishing registration process at 15:04:51 PM.
+Patient 51 waited 0.0 minutes at the registration desk
+Patient 51 arriving at the consultation room at 15:04:51 PM.
 Patient 52 is a NewOP patient.
-Patient 52 arriving at the registration desk at 14:45:38 PM.
-Patient 52 starting registration process at 14:45:38 PM.
-Patient 51 finishing billing process at 14:47:20 PM.
-Patient 51 waited 0.0 minutes at the billing room
-Patient 51 arriving at the xray room at 14:47:20 PM.
-Patient 49 starting billing process at 14:47:20 PM.
-Patient 41 finishing consultation with a doctor at 14:49:07 PM.
-Patient 41 waited 5.831197615464529 minutes at the consultation room
-Patient 41 arriving at the billing room at 14:49:07 PM.
-Patient 50 starting consultation with a doctor at 14:49:07 PM.
-Patient 52 finishing registration process at 14:52:41 PM.
+Patient 52 arriving at the registration desk at 15:05:48 PM.
+Patient 52 starting registration process at 15:05:48 PM.
+Patient 35 finishing billing process at 15:09:24 PM.
+Patient 35 waited 19.629119277000427 minutes at the billing room
+Patient 35 arriving at the dressing desk at 15:09:24 PM.
+Patient 40 starting billing process at 15:09:24 PM.
+Patient 35 starting dressing process at 15:09:24 PM.
+Patient 52 finishing registration process at 15:12:51 PM.
 Patient 52 waited 0.0 minutes at the registration desk
-Patient 52 arriving at the consultation room at 14:52:41 PM.
-Patient 44 finishing xray process at 14:53:19 PM.
-Patient 44 waited 74.19291218916575 minutes at the xray room
-Patient 44 arriving at the consultation room at 14:53:19 PM.
-Patient 51 starting xray process at 14:53:19 PM.
-Patient 49 finishing billing process at 14:57:22 PM.
-Patient 49 waited 9.25477233727773 minutes at the billing room
-Patient 49 arriving at the dressing desk at 14:57:22 PM.
-Patient 41 starting billing process at 14:57:22 PM.
-Patient 49 starting dressing process at 14:57:22 PM.
-Patient 53 is a OldOPScan patient.
-Patient 53 arriving at the billing room at 14:59:30 PM.
-Patient 50 finishing consultation with a doctor at 15:00:08 PM.
-Patient 50 waited 5.803869144121806 minutes at the consultation room
-Patient 50 arriving at the billing room at 15:00:08 PM.
-Patient 52 starting consultation with a doctor at 15:00:08 PM.
-Patient 41 finishing billing process at 15:07:23 PM.
-Patient 41 waited 8.261850313345592 minutes at the billing room
-Patient 41 arriving at the dressing desk at 15:07:23 PM.
-Patient 53 starting billing process at 15:07:23 PM.
-Patient 52 finishing consultation with a doctor at 15:11:09 PM.
-Patient 52 waited 7.456053491433462 minutes at the consultation room
-Patient 52 arriving at the billing room at 15:11:09 PM.
-Patient 44 starting consultation with a doctor at 15:11:09 PM.
-Patient 54 is a NewOP patient.
-Patient 54 arriving at the registration desk at 15:11:14 PM.
-Patient 54 starting registration process at 15:11:14 PM.
-Patient 49 finishing dressing process at 15:12:26 PM.
-Patient 49 waited 0.0 minutes at the dressing desk
-Patient 49 arriving at the pharmacy at 15:12:26 PM.
-Patient 41 starting dressing process at 15:12:26 PM.
-Patient 49 starting pharmacy process at 15:12:26 PM.
-Patient 51 finishing xray process at 15:14:23 PM.
-Patient 51 waited 5.981175406773885 minutes at the xray room
-Patient 51 arriving at the consultation room at 15:14:23 PM.
-Patient 53 finishing billing process at 15:17:25 PM.
-Patient 53 waited 7.886368032296499 minutes at the billing room
-Patient 53 arriving at the xray room at 15:17:25 PM.
-Patient 50 starting billing process at 15:17:25 PM.
-Patient 53 starting xray process at 15:17:25 PM.
-Patient 54 finishing registration process at 15:18:14 PM.
-Patient 54 waited 0.0 minutes at the registration desk
-Patient 54 left the hospital at 15:18:14 PM
-Patient 44 finishing consultation with a doctor at 15:22:13 PM.
-Patient 44 waited 17.8229821562767 minutes at the consultation room
-Patient 44 arriving at the billing room at 15:22:13 PM.
-Patient 51 starting consultation with a doctor at 15:22:13 PM.
+Patient 52 arriving at the consultation room at 15:12:51 PM.
+Patient 41 finishing consultation with a doctor at 15:15:08 PM.
+Patient 41 waited 126.14535424311956 minutes at the consultation room
+Patient 41 arriving at the billing room at 15:15:08 PM.
+Patient 42 starting consultation with a doctor at 15:15:08 PM.
+Patient 12 finishing pharmacy process at 15:16:10 PM.
+Patient 12 waited 0.0 minutes at the pharmacy
+Patient 40 finishing billing process at 15:19:25 PM.
+Patient 40 waited 22.318892975648243 minutes at the billing room
+Patient 40 arriving at the xray room at 15:19:25 PM.
+Patient 38 starting billing process at 15:19:25 PM.
+Patient 36 finishing xray process at 15:21:47 PM.
+Patient 36 waited 71.73778448502223 minutes at the xray room
+Patient 36 arriving at the billing room at 15:21:47 PM.
+Patient 44 starting xray process at 15:21:47 PM.
+Patient 35 finishing dressing process at 15:24:28 PM.
+Patient 35 waited 0.0 minutes at the dressing desk
+Patient 47 finishing scan process at 15:25:17 PM.
+Patient 47 waited 17.99064449866613 minutes at the scan
+Patient 50 starting scan process at 15:25:17 PM.
+Patient 53 is a OldOP patient.
+Patient 53 arriving at the registration desk at 15:27:48 PM.
+Patient 53 starting registration process at 15:27:48 PM.
+Patient 42 finishing consultation with a doctor at 15:29:08 PM.
+Patient 42 waited 122.21690855026245 minutes at the consultation room
+Patient 42 arriving at the billing room at 15:29:08 PM.
+Patient 43 starting consultation with a doctor at 15:29:08 PM.
+Patient 38 finishing billing process at 15:29:29 PM.
+Patient 38 waited 22.1948375026385 minutes at the billing room
+Patient 38 arriving at the pharmacy at 15:29:29 PM.
+Patient 41 starting billing process at 15:29:29 PM.
+Patient 38 starting pharmacy process at 15:29:29 PM.
+Patient 54 is a IP patient.
+Patient 54 arriving at the xray room at 15:30:48 PM.
+Patient 53 finishing registration process at 15:34:51 PM.
+Patient 53 waited 0.0 minutes at the registration desk
+Patient 53 arriving at the consultation room at 15:34:51 PM.
+Patient 41 finishing billing process at 15:39:34 PM.
+Patient 41 waited 14.351205305258434 minutes at the billing room
+Patient 41 arriving at the xray room at 15:39:34 PM.
+Patient 36 starting billing process at 15:39:34 PM.
+Patient 44 finishing xray process at 15:42:48 PM.
+Patient 44 waited 82.75129372676214 minutes at the xray room
+Patient 44 arriving at the consultation room at 15:42:48 PM.
+Patient 46 starting xray process at 15:42:48 PM.
+Patient 43 finishing consultation with a doctor at 15:43:10 PM.
+Patient 43 waited 114.24941961367925 minutes at the consultation room
+Patient 43 arriving at the billing room at 15:43:10 PM.
+Patient 24 starting consultation with a doctor at 15:43:10 PM.
+Patient 38 finishing pharmacy process at 15:44:30 PM.
+Patient 38 waited 0.0 minutes at the pharmacy
 Patient 55 is a OldOP patient.
-Patient 55 arriving at the registration desk at 15:22:23 PM.
-Patient 55 starting registration process at 15:22:23 PM.
-Patient 50 finishing billing process at 15:27:26 PM.
-Patient 50 waited 17.27635293006897 minutes at the billing room
-Patient 50 arriving at the pharmacy at 15:27:26 PM.
-Patient 52 starting billing process at 15:27:26 PM.
-Patient 49 finishing pharmacy process at 15:27:26 PM.
-Patient 49 waited 0.0 minutes at the pharmacy
-Patient 50 starting pharmacy process at 15:27:26 PM.
-Patient 41 finishing dressing process at 15:27:30 PM.
-Patient 41 waited 5.0579817533493046 minutes at the dressing desk
-Patient 55 finishing registration process at 15:29:26 PM.
+Patient 55 arriving at the registration desk at 15:47:47 PM.
+Patient 55 starting registration process at 15:47:47 PM.
+Patient 36 finishing billing process at 15:49:37 PM.
+Patient 36 waited 17.774599810441334 minutes at the billing room
+Patient 36 arriving at the pharmacy at 15:49:37 PM.
+Patient 42 starting billing process at 15:49:37 PM.
+Patient 36 starting pharmacy process at 15:49:37 PM.
+Patient 50 finishing scan process at 15:53:19 PM.
+Patient 50 waited 25.907413466771445 minutes at the scan
+Patient 55 finishing registration process at 15:54:47 PM.
 Patient 55 waited 0.0 minutes at the registration desk
-Patient 55 arriving at the consultation room at 15:29:26 PM.
-Patient 56 is a OldOP patient.
-Patient 56 arriving at the registration desk at 15:29:44 PM.
-Patient 56 starting registration process at 15:29:44 PM.
-Patient 51 finishing consultation with a doctor at 15:33:18 PM.
-Patient 51 waited 7.829912666479746 minutes at the consultation room
-Patient 51 arriving at the billing room at 15:33:18 PM.
-Patient 55 starting consultation with a doctor at 15:33:18 PM.
-Patient 56 finishing registration process at 15:36:47 PM.
-Patient 56 waited 0.0 minutes at the registration desk
-Patient 56 arriving at the consultation room at 15:36:47 PM.
-Patient 52 finishing billing process at 15:37:30 PM.
-Patient 52 waited 16.290260195732117 minutes at the billing room
-Patient 52 arriving at the scan at 15:37:30 PM.
-Patient 44 starting billing process at 15:37:30 PM.
-Patient 52 starting scan process at 15:37:30 PM.
-Patient 53 finishing xray process at 15:38:25 PM.
-Patient 53 waited 0.0 minutes at the xray room
-Patient 53 arriving at the billing room at 15:38:25 PM.
-Patient 57 is a OldOP patient.
-Patient 57 arriving at the registration desk at 15:40:33 PM.
-Patient 57 starting registration process at 15:40:33 PM.
-Patient 50 finishing pharmacy process at 15:42:30 PM.
-Patient 50 waited 0.008325513203938801 minutes at the pharmacy
-Patient 55 finishing consultation with a doctor at 15:44:22 PM.
-Patient 55 waited 3.8710524678230285 minutes at the consultation room
-Patient 55 arriving at the billing room at 15:44:22 PM.
-Patient 56 starting consultation with a doctor at 15:44:22 PM.
-Patient 44 finishing billing process at 15:47:34 PM.
-Patient 44 waited 15.287430775165557 minutes at the billing room
-Patient 44 arriving at the dressing desk at 15:47:34 PM.
-Patient 51 starting billing process at 15:47:34 PM.
-Patient 44 starting dressing process at 15:47:34 PM.
-Patient 57 finishing registration process at 15:47:37 PM.
+Patient 55 arriving at the consultation room at 15:54:47 PM.
+Patient 24 finishing consultation with a doctor at 15:57:14 PM.
+Patient 24 waited 126.56130330562591 minutes at the consultation room
+Patient 24 arriving at the billing room at 15:57:14 PM.
+Patient 25 starting consultation with a doctor at 15:57:14 PM.
+Patient 56 is a IP patient.
+Patient 56 arriving at the xray room at 15:57:47 PM.
+Patient 42 finishing billing process at 15:59:37 PM.
+Patient 42 waited 20.4711913784345 minutes at the billing room
+Patient 42 arriving at the dressing desk at 15:59:37 PM.
+Patient 43 starting billing process at 15:59:37 PM.
+Patient 42 starting dressing process at 15:59:37 PM.
+Patient 46 finishing xray process at 16:03:50 PM.
+Patient 46 waited 83.66366465091706 minutes at the xray room
+Patient 39 starting xray process at 16:03:50 PM.
+Patient 36 finishing pharmacy process at 16:04:38 PM.
+Patient 36 waited 0.0 minutes at the pharmacy
+Patient 43 finishing billing process at 16:09:41 PM.
+Patient 43 waited 16.447449791431428 minutes at the billing room
+Patient 43 arriving at the xray room at 16:09:41 PM.
+Patient 24 starting billing process at 16:09:41 PM.
+Patient 25 finishing consultation with a doctor at 16:11:17 PM.
+Patient 25 waited 119.58227630456288 minutes at the consultation room
+Patient 27 starting consultation with a doctor at 16:11:17 PM.
+Patient 42 finishing dressing process at 16:14:37 PM.
+Patient 42 waited 0.0 minutes at the dressing desk
+Patient 57 is a NewOP patient.
+Patient 57 arriving at the registration desk at 16:14:47 PM.
+Patient 57 starting registration process at 16:14:47 PM.
+Patient 24 finishing billing process at 16:19:44 PM.
+Patient 24 waited 12.443712858359019 minutes at the billing room
+Patient 24 arriving at the dressing desk at 16:19:44 PM.
+Patient 24 starting dressing process at 16:19:44 PM.
+Patient 57 finishing registration process at 16:21:50 PM.
 Patient 57 waited 0.0 minutes at the registration desk
-Patient 57 arriving at the consultation room at 15:47:37 PM.
-Patient 56 finishing consultation with a doctor at 15:55:23 PM.
-Patient 56 waited 7.570522503058116 minutes at the consultation room
-Patient 56 arriving at the billing room at 15:55:23 PM.
-Patient 57 starting consultation with a doctor at 15:55:23 PM.
-Patient 51 finishing billing process at 15:57:35 PM.
-Patient 51 waited 14.261855614185333 minutes at the billing room
-Patient 51 arriving at the pharmacy at 15:57:35 PM.
-Patient 53 starting billing process at 15:57:35 PM.
-Patient 51 starting pharmacy process at 15:57:35 PM.
-Patient 58 is a OldOP patient.
-Patient 58 arriving at the registration desk at 16:00:45 PM.
-Patient 58 starting registration process at 16:00:45 PM.
-Patient 44 finishing dressing process at 16:02:35 PM.
-Patient 44 waited 0.0 minutes at the dressing desk
-Patient 52 finishing scan process at 16:05:33 PM.
-Patient 52 waited 0.0 minutes at the scan
-Patient 57 finishing consultation with a doctor at 16:06:24 PM.
-Patient 57 waited 7.755785524845123 minutes at the consultation room
-Patient 57 arriving at the billing room at 16:06:24 PM.
-Patient 53 finishing billing process at 16:07:36 PM.
-Patient 53 waited 19.153516499201455 minutes at the billing room
-Patient 53 arriving at the dressing desk at 16:07:36 PM.
-Patient 55 starting billing process at 16:07:36 PM.
-Patient 53 starting dressing process at 16:07:36 PM.
-Patient 58 finishing registration process at 16:07:47 PM.
+Patient 57 arriving at the consultation room at 16:21:50 PM.
+Patient 39 finishing xray process at 16:24:52 PM.
+Patient 39 waited 74.51994475523631 minutes at the xray room
+Patient 39 arriving at the consultation room at 16:24:52 PM.
+Patient 40 starting xray process at 16:24:52 PM.
+Patient 27 finishing consultation with a doctor at 16:25:21 PM.
+Patient 27 waited 112.6077612042427 minutes at the consultation room
+Patient 27 arriving at the pharmacy at 16:25:21 PM.
+Patient 48 starting consultation with a doctor at 16:25:21 PM.
+Patient 27 starting pharmacy process at 16:25:21 PM.
+Patient 58 is a NewOP patient.
+Patient 58 arriving at the registration desk at 16:25:47 PM.
+Patient 58 starting registration process at 16:25:47 PM.
+Patient 59 is a NewOP patient.
+Patient 59 arriving at the registration desk at 16:27:46 PM.
+Patient 60 is a OldOP patient.
+Patient 60 arriving at the registration desk at 16:27:46 PM.
+Patient 58 finishing registration process at 16:32:50 PM.
 Patient 58 waited 0.0 minutes at the registration desk
-Patient 58 arriving at the consultation room at 16:07:47 PM.
-Patient 58 starting consultation with a doctor at 16:07:47 PM.
-Patient 59 is a OldOPScan patient.
-Patient 59 arriving at the billing room at 16:09:09 PM.
-Patient 51 finishing pharmacy process at 16:12:37 PM.
-Patient 51 waited 0.0 minutes at the pharmacy
-Patient 55 finishing billing process at 16:17:41 PM.
-Patient 55 waited 23.24220410982768 minutes at the billing room
-Patient 55 arriving at the injection at 16:17:41 PM.
-Patient 56 starting billing process at 16:17:41 PM.
-Patient 55 starting injection process at 16:17:41 PM.
-Patient 58 finishing consultation with a doctor at 16:18:50 PM.
-Patient 58 waited 0.0 minutes at the consultation room
-Patient 58 arriving at the billing room at 16:18:50 PM.
-Patient 53 finishing dressing process at 16:22:40 PM.
-Patient 53 waited 0.0 minutes at the dressing desk
-Patient 56 finishing billing process at 16:27:42 PM.
-Patient 56 waited 22.30359748999278 minutes at the billing room
-Patient 56 arriving at the injection at 16:27:42 PM.
-Patient 57 starting billing process at 16:27:42 PM.
-Patient 55 finishing injection process at 16:17:41 PM.
-Patient 55 waited 0.0 minutes at the injection
-Patient 56 starting injection process at 16:28:45 PM.
-Patient 60 is a NewOP patient.
-Patient 60 arriving at the registration desk at 16:28:55 PM.
-Patient 60 starting registration process at 16:28:55 PM.
-Patient 60 finishing registration process at 16:35:58 PM.
-Patient 60 waited 0.0 minutes at the registration desk
-Patient 60 arriving at the consultation room at 16:35:58 PM.
-Patient 60 starting consultation with a doctor at 16:35:58 PM.
-Patient 57 finishing billing process at 16:37:46 PM.
-Patient 57 waited 21.298575202624004 minutes at the billing room
-Patient 57 arriving at the xray room at 16:37:46 PM.
-Patient 59 starting billing process at 16:37:46 PM.
-Patient 57 starting xray process at 16:37:46 PM.
+Patient 58 arriving at the consultation room at 16:32:50 PM.
+Patient 59 starting registration process at 16:32:50 PM.
+Patient 24 finishing dressing process at 16:34:48 PM.
+Patient 24 waited 0.0 minutes at the dressing desk
+Patient 48 finishing consultation with a doctor at 16:39:23 PM.
+Patient 48 waited 118.47768216530481 minutes at the consultation room
+Patient 48 arriving at the billing room at 16:39:23 PM.
+Patient 49 starting consultation with a doctor at 16:39:23 PM.
+Patient 48 starting billing process at 16:39:23 PM.
+Patient 59 finishing registration process at 16:39:52 PM.
+Patient 59 waited 5.079285836219787 minutes at the registration desk
+Patient 59 arriving at the consultation room at 16:39:52 PM.
+Patient 60 starting registration process at 16:39:52 PM.
+Patient 27 finishing pharmacy process at 16:40:21 PM.
+Patient 27 waited 0.0 minutes at the pharmacy
+Patient 40 finishing xray process at 16:45:56 PM.
+Patient 40 waited 65.45067052443822 minutes at the xray room
+Patient 40 arriving at the billing room at 16:45:56 PM.
+Patient 54 starting xray process at 16:45:56 PM.
+Patient 60 finishing registration process at 16:46:54 PM.
+Patient 60 waited 12.106002501646678 minutes at the registration desk
+Patient 60 arriving at the consultation room at 16:46:54 PM.
+Patient 48 finishing billing process at 16:49:23 PM.
+Patient 48 waited 0.0 minutes at the billing room
+Patient 48 arriving at the xray room at 16:49:23 PM.
+Patient 40 starting billing process at 16:49:23 PM.
+Patient 49 finishing consultation with a doctor at 16:53:27 PM.
+Patient 49 waited 124.53538798888525 minutes at the consultation room
+Patient 49 arriving at the billing room at 16:53:27 PM.
+Patient 51 starting consultation with a doctor at 16:53:27 PM.
+Patient 40 finishing billing process at 16:59:26 PM.
+Patient 40 waited 3.4503989378611246 minutes at the billing room
+Patient 40 arriving at the dressing desk at 16:59:26 PM.
+Patient 49 starting billing process at 16:59:26 PM.
+Patient 40 starting dressing process at 16:59:26 PM.
 Patient 61 is a NewOP patient.
-Patient 61 arriving at the registration desk at 16:39:25 PM.
-Patient 61 starting registration process at 16:39:25 PM.
-Patient 56 finishing injection process at 16:28:45 PM.
-Patient 56 waited 1.0548510869344077 minutes at the injection
-Patient 61 finishing registration process at 16:46:26 PM.
+Patient 61 arriving at the registration desk at 16:59:45 PM.
+Patient 61 starting registration process at 16:59:45 PM.
+Patient 61 finishing registration process at 17:06:48 PM.
 Patient 61 waited 0.0 minutes at the registration desk
-Patient 61 arriving at the consultation room at 16:46:26 PM.
-Patient 60 finishing consultation with a doctor at 16:47:02 PM.
-Patient 60 waited 0.0 minutes at the consultation room
-Patient 60 arriving at the billing room at 16:47:02 PM.
-Patient 61 starting consultation with a doctor at 16:47:02 PM.
-Patient 62 is a NewOP patient.
-Patient 62 arriving at the registration desk at 16:47:08 PM.
-Patient 62 starting registration process at 16:47:08 PM.
-Patient 59 finishing billing process at 16:47:50 PM.
-Patient 59 waited 28.628657698631287 minutes at the billing room
-Patient 59 arriving at the xray room at 16:47:50 PM.
-Patient 58 starting billing process at 16:47:50 PM.
-Patient 62 finishing registration process at 16:54:11 PM.
-Patient 62 waited 0.0 minutes at the registration desk
-Patient 62 arriving at the consultation room at 16:54:11 PM.
-Patient 58 finishing billing process at 16:57:54 PM.
-Patient 58 waited 29.01260728041331 minutes at the billing room
-Patient 58 arriving at the xray room at 16:57:54 PM.
-Patient 60 starting billing process at 16:57:54 PM.
-Patient 61 finishing consultation with a doctor at 16:58:04 PM.
-Patient 61 waited 0.5950823148091634 minutes at the consultation room
-Patient 61 arriving at the billing room at 16:58:04 PM.
-Patient 62 starting consultation with a doctor at 16:58:04 PM.
-Patient 57 finishing xray process at 16:58:51 PM.
-Patient 57 waited 0.0 minutes at the xray room
-Patient 57 arriving at the billing room at 16:58:51 PM.
-Patient 59 starting xray process at 16:58:51 PM.
+Patient 61 arriving at the consultation room at 17:06:48 PM.
+Patient 54 finishing xray process at 17:06:57 PM.
+Patient 54 waited 75.14717642466228 minutes at the xray room
+Patient 41 starting xray process at 17:06:57 PM.
+Patient 51 finishing consultation with a doctor at 17:07:28 PM.
+Patient 51 waited 108.60282853047053 minutes at the consultation room
+Patient 52 starting consultation with a doctor at 17:07:28 PM.
+Patient 62 is a OldOPScan patient.
+Patient 62 arriving at the billing room at 17:07:45 PM.
+Patient 49 finishing billing process at 17:09:30 PM.
+Patient 49 waited 5.980728809038798 minutes at the billing room
+Patient 49 arriving at the dressing desk at 17:09:30 PM.
+Patient 62 starting billing process at 17:09:30 PM.
+Patient 40 finishing dressing process at 17:14:28 PM.
+Patient 40 waited 0.0 minutes at the dressing desk
+Patient 49 starting dressing process at 17:14:28 PM.
+Patient 62 finishing billing process at 17:19:33 PM.
+Patient 62 waited 1.7505865136782328 minutes at the billing room
+Patient 62 arriving at the xray room at 17:19:33 PM.
+Patient 52 finishing consultation with a doctor at 17:21:32 PM.
+Patient 52 waited 114.63167468309402 minutes at the consultation room
+Patient 52 arriving at the billing room at 17:21:32 PM.
+Patient 53 starting consultation with a doctor at 17:21:32 PM.
+Patient 52 starting billing process at 17:21:32 PM.
 Patient 63 is a OldOPScan patient.
-Patient 63 arriving at the billing room at 17:03:31 PM.
-Patient 60 finishing billing process at 17:07:57 PM.
-Patient 60 waited 10.869981129964193 minutes at the billing room
-Patient 60 arriving at the pharmacy at 17:07:57 PM.
-Patient 61 starting billing process at 17:07:57 PM.
-Patient 60 starting pharmacy process at 17:07:57 PM.
-Patient 62 finishing consultation with a doctor at 17:09:09 PM.
-Patient 62 waited 3.8871028900146483 minutes at the consultation room
-Patient 62 arriving at the billing room at 17:09:09 PM.
+Patient 63 arriving at the billing room at 17:27:45 PM.
 Patient 64 is a NewOP patient.
-Patient 64 arriving at the registration desk at 17:13:51 PM.
-Patient 64 starting registration process at 17:13:51 PM.
-Patient 61 finishing billing process at 17:18:00 PM.
-Patient 61 waited 9.887873963514965 minutes at the billing room
-Patient 61 arriving at the xray room at 17:18:00 PM.
-Patient 57 starting billing process at 17:18:00 PM.
-Patient 59 finishing xray process at 17:19:55 PM.
-Patient 59 waited 11.007397731145224 minutes at the xray room
-Patient 59 arriving at the consultation room at 17:19:55 PM.
-Patient 58 starting xray process at 17:19:55 PM.
-Patient 59 starting consultation with a doctor at 17:19:55 PM.
-Patient 64 finishing registration process at 17:20:52 PM.
+Patient 64 arriving at the registration desk at 17:27:45 PM.
+Patient 64 starting registration process at 17:27:45 PM.
+Patient 41 finishing xray process at 17:28:01 PM.
+Patient 41 waited 87.38382293780644 minutes at the xray room
+Patient 41 arriving at the billing room at 17:28:01 PM.
+Patient 56 starting xray process at 17:28:01 PM.
+Patient 49 finishing dressing process at 17:29:28 PM.
+Patient 49 waited 4.967457524935404 minutes at the dressing desk
+Patient 52 finishing billing process at 17:31:34 PM.
+Patient 52 waited 0.0 minutes at the billing room
+Patient 52 arriving at the pharmacy at 17:31:34 PM.
+Patient 63 starting billing process at 17:31:34 PM.
+Patient 52 starting pharmacy process at 17:31:34 PM.
+Patient 64 finishing registration process at 17:34:47 PM.
 Patient 64 waited 0.0 minutes at the registration desk
-Patient 64 arriving at the consultation room at 17:20:52 PM.
-Patient 60 finishing pharmacy process at 17:23:01 PM.
-Patient 60 waited 0.0 minutes at the pharmacy
-Patient 57 finishing billing process at 17:28:05 PM.
-Patient 57 waited 19.15285995006561 minutes at the billing room
-Patient 57 arriving at the dressing desk at 17:28:05 PM.
-Patient 63 starting billing process at 17:28:05 PM.
-Patient 57 starting dressing process at 17:28:05 PM.
-Patient 59 finishing consultation with a doctor at 17:30:56 PM.
-Patient 59 waited 0.0 minutes at the consultation room
-Patient 59 arriving at the billing room at 17:30:56 PM.
-Patient 64 starting consultation with a doctor at 17:30:56 PM.
-Patient 65 is a OldOPScan patient.
-Patient 65 arriving at the billing room at 17:31:03 PM.
-Patient 63 finishing billing process at 17:38:07 PM.
-Patient 63 waited 24.569739377498628 minutes at the billing room
-Patient 63 arriving at the xray room at 17:38:07 PM.
-Patient 62 starting billing process at 17:38:07 PM.
-Patient 58 finishing xray process at 17:40:55 PM.
-Patient 58 waited 22.013061622778576 minutes at the xray room
-Patient 58 arriving at the consultation room at 17:40:55 PM.
-Patient 61 starting xray process at 17:40:55 PM.
-Patient 64 finishing consultation with a doctor at 17:41:59 PM.
-Patient 64 waited 10.062812105814617 minutes at the consultation room
-Patient 64 arriving at the billing room at 17:41:59 PM.
-Patient 58 starting consultation with a doctor at 17:41:59 PM.
+Patient 64 arriving at the consultation room at 17:34:47 PM.
+Patient 53 finishing consultation with a doctor at 17:35:33 PM.
+Patient 53 waited 106.68405009905497 minutes at the consultation room
+Patient 53 left the hospital at 17:35:33 PM
+Patient 44 starting consultation with a doctor at 17:35:33 PM.
+Patient 65 is a IP patient.
+Patient 65 arriving at the xray room at 17:37:45 PM.
 Patient 66 is a OldOP patient.
-Patient 66 arriving at the registration desk at 17:42:17 PM.
-Patient 66 starting registration process at 17:42:17 PM.
-Patient 57 finishing dressing process at 17:43:05 PM.
-Patient 57 waited 0.0 minutes at the dressing desk
-Patient 67 is a OldOP patient.
-Patient 67 arriving at the registration desk at 17:45:57 PM.
-Patient 68 is a OldOP patient.
-Patient 68 arriving at the registration desk at 17:45:57 PM.
-Patient 62 finishing billing process at 17:48:12 PM.
-Patient 62 waited 28.965627773602804 minutes at the billing room
-Patient 62 arriving at the dressing desk at 17:48:12 PM.
-Patient 59 starting billing process at 17:48:12 PM.
-Patient 62 starting dressing process at 17:48:12 PM.
-Patient 66 finishing registration process at 17:49:21 PM.
+Patient 66 arriving at the registration desk at 17:37:45 PM.
+Patient 66 starting registration process at 17:37:45 PM.
+Patient 63 finishing billing process at 17:41:38 PM.
+Patient 63 waited 3.8303885062535605 minutes at the billing room
+Patient 63 arriving at the scan at 17:41:38 PM.
+Patient 41 starting billing process at 17:41:38 PM.
+Patient 63 starting scan process at 17:41:38 PM.
+Patient 66 finishing registration process at 17:44:46 PM.
 Patient 66 waited 0.0 minutes at the registration desk
-Patient 66 arriving at the consultation room at 17:49:21 PM.
-Patient 67 starting registration process at 17:49:21 PM.
-Patient 58 finishing consultation with a doctor at 17:53:01 PM.
-Patient 58 waited 1.0666352232297263 minutes at the consultation room
-Patient 58 arriving at the pharmacy at 17:53:01 PM.
-Patient 66 starting consultation with a doctor at 17:53:01 PM.
-Patient 58 starting pharmacy process at 17:53:01 PM.
-Patient 67 finishing registration process at 17:56:26 PM.
-Patient 67 waited 3.413866074879964 minutes at the registration desk
-Patient 67 arriving at the consultation room at 17:56:26 PM.
-Patient 68 starting registration process at 17:56:26 PM.
-Patient 59 finishing billing process at 17:58:15 PM.
-Patient 59 waited 17.26338219245275 minutes at the billing room
-Patient 59 arriving at the pharmacy at 17:58:15 PM.
-Patient 65 starting billing process at 17:58:15 PM.
-Patient 61 finishing xray process at 18:01:59 PM.
-Patient 61 waited 22.922644178072613 minutes at the xray room
-Patient 61 arriving at the consultation room at 18:01:59 PM.
-Patient 63 starting xray process at 18:01:59 PM.
-Patient 62 finishing dressing process at 18:03:13 PM.
-Patient 62 waited 0.0 minutes at the dressing desk
-Patient 62 arriving at the pharmacy at 18:03:13 PM.
-Patient 68 finishing registration process at 18:03:29 PM.
-Patient 68 waited 10.494491255283355 minutes at the registration desk
-Patient 68 left the hospital at 18:03:29 PM
-Patient 66 finishing consultation with a doctor at 18:04:05 PM.
-Patient 66 waited 3.6649270335833233 minutes at the consultation room
-Patient 66 arriving at the billing room at 18:04:05 PM.
-Patient 67 starting consultation with a doctor at 18:04:05 PM.
-Patient 58 finishing pharmacy process at 18:08:04 PM.
-Patient 58 waited 0.0 minutes at the pharmacy
-Patient 59 starting pharmacy process at 18:08:04 PM.
-Patient 65 finishing billing process at 18:08:19 PM.
-Patient 65 waited 27.200959916909536 minutes at the billing room
-Patient 65 arriving at the scan at 18:08:19 PM.
-Patient 64 starting billing process at 18:08:19 PM.
-Patient 65 starting scan process at 18:08:19 PM.
-Patient 69 is a NewOP patient.
-Patient 69 arriving at the registration desk at 18:09:03 PM.
-Patient 69 starting registration process at 18:09:03 PM.
-Patient 67 finishing consultation with a doctor at 18:15:07 PM.
-Patient 67 waited 7.649269600709279 minutes at the consultation room
-Patient 67 arriving at the billing room at 18:15:07 PM.
-Patient 61 starting consultation with a doctor at 18:15:07 PM.
-Patient 69 finishing registration process at 18:16:06 PM.
-Patient 69 waited 0.0 minutes at the registration desk
-Patient 69 arriving at the consultation room at 18:16:06 PM.
-Patient 64 finishing billing process at 18:18:20 PM.
-Patient 64 waited 26.330541038513182 minutes at the billing room
-Patient 64 arriving at the pharmacy at 18:18:20 PM.
-Patient 66 starting billing process at 18:18:20 PM.
-Patient 63 finishing xray process at 18:23:00 PM.
-Patient 63 waited 23.86367015441259 minutes at the xray room
-Patient 63 arriving at the billing room at 18:23:00 PM.
-Patient 59 finishing pharmacy process at 18:23:08 PM.
-Patient 59 waited 9.826751565933227 minutes at the pharmacy
-Patient 62 starting pharmacy process at 18:23:08 PM.
-Patient 61 finishing consultation with a doctor at 18:26:10 PM.
-Patient 61 waited 13.134409737586974 minutes at the consultation room
-Patient 69 starting consultation with a doctor at 18:26:10 PM.
-Patient 66 finishing billing process at 18:28:23 PM.
-Patient 66 waited 14.240697654088338 minutes at the billing room
-Patient 66 arriving at the xray room at 18:28:23 PM.
-Patient 67 starting billing process at 18:28:23 PM.
-Patient 66 starting xray process at 18:28:23 PM.
-Patient 70 is a OldOP patient.
-Patient 70 arriving at the registration desk at 18:31:04 PM.
-Patient 70 starting registration process at 18:31:04 PM.
-Patient 65 finishing scan process at 18:36:21 PM.
-Patient 65 waited 0.0 minutes at the scan
-Patient 69 finishing consultation with a doctor at 18:37:11 PM.
-Patient 69 waited 10.058225067456563 minutes at the consultation room
-Patient 69 arriving at the billing room at 18:37:11 PM.
-Patient 70 finishing registration process at 18:38:04 PM.
-Patient 70 waited 0.0 minutes at the registration desk
-Patient 70 arriving at the consultation room at 18:38:04 PM.
-Patient 70 starting consultation with a doctor at 18:38:04 PM.
-Patient 62 finishing pharmacy process at 18:38:09 PM.
-Patient 62 waited 19.921806915601096 minutes at the pharmacy
-Patient 64 starting pharmacy process at 18:38:09 PM.
-Patient 67 finishing billing process at 18:38:25 PM.
-Patient 67 waited 13.27572652498881 minutes at the billing room
-Patient 67 arriving at the xray room at 18:38:25 PM.
-Patient 63 starting billing process at 18:38:25 PM.
-Patient 71 is a OldOP patient.
-Patient 71 arriving at the registration desk at 18:40:58 PM.
-Patient 71 starting registration process at 18:40:58 PM.
-Patient 71 finishing registration process at 18:48:00 PM.
-Patient 71 waited 0.0 minutes at the registration desk
-Patient 71 arriving at the consultation room at 18:48:00 PM.
-Patient 63 finishing billing process at 18:48:25 PM.
-Patient 63 waited 15.409733947118124 minutes at the billing room
-Patient 63 arriving at the pharmacy at 18:48:25 PM.
-Patient 69 starting billing process at 18:48:25 PM.
-Patient 70 finishing consultation with a doctor at 18:49:07 PM.
-Patient 70 waited 0.0 minutes at the consultation room
-Patient 70 arriving at the billing room at 18:49:07 PM.
-Patient 71 starting consultation with a doctor at 18:49:07 PM.
-Patient 66 finishing xray process at 18:49:24 PM.
-Patient 66 waited 0.0 minutes at the xray room
-Patient 66 arriving at the billing room at 18:49:24 PM.
-Patient 67 starting xray process at 18:49:24 PM.
-Patient 64 finishing pharmacy process at 18:53:10 PM.
-Patient 64 waited 19.83033730983734 minutes at the pharmacy
-Patient 63 starting pharmacy process at 18:53:10 PM.
-Patient 69 finishing billing process at 18:58:29 PM.
-Patient 69 waited 11.24021676381429 minutes at the billing room
-Patient 69 arriving at the xray room at 18:58:29 PM.
-Patient 70 starting billing process at 18:58:29 PM.
-Patient 72 is a NewOP patient.
-Patient 72 arriving at the registration desk at 18:59:24 PM.
-Patient 73 is a OldOPScan patient.
-Patient 73 arriving at the billing room at 18:59:24 PM.
-Patient 72 starting registration process at 18:59:24 PM.
-Patient 71 finishing consultation with a doctor at 19:00:08 PM.
-Patient 71 waited 1.1149223526318868 minutes at the consultation room
-Patient 71 arriving at the billing room at 19:00:08 PM.
-Patient 72 finishing registration process at 19:06:28 PM.
-Patient 72 waited 0.0 minutes at the registration desk
-Patient 72 arriving at the consultation room at 19:06:28 PM.
-Patient 72 starting consultation with a doctor at 19:06:28 PM.
-Patient 63 finishing pharmacy process at 19:08:13 PM.
-Patient 63 waited 4.736768209934235 minutes at the pharmacy
-Patient 70 finishing billing process at 19:08:32 PM.
-Patient 70 waited 9.363955469926198 minutes at the billing room
-Patient 70 arriving at the xray room at 19:08:32 PM.
-Patient 66 starting billing process at 19:08:32 PM.
-Patient 74 is a NewOP patient.
-Patient 74 arriving at the registration desk at 19:09:24 PM.
-Patient 74 starting registration process at 19:09:24 PM.
-Patient 67 finishing xray process at 19:10:26 PM.
-Patient 67 waited 10.995840148131053 minutes at the xray room
-Patient 67 arriving at the billing room at 19:10:26 PM.
-Patient 69 starting xray process at 19:10:26 PM.
-Patient 74 finishing registration process at 19:16:28 PM.
-Patient 74 waited 0.0 minutes at the registration desk
-Patient 74 arriving at the consultation room at 19:16:28 PM.
-Patient 72 finishing consultation with a doctor at 19:17:31 PM.
-Patient 72 waited 0.0 minutes at the consultation room
-Patient 72 arriving at the billing room at 19:17:31 PM.
-Patient 74 starting consultation with a doctor at 19:17:31 PM.
-Patient 66 finishing billing process at 19:18:33 PM.
-Patient 66 waited 19.12027412255605 minutes at the billing room
-Patient 66 arriving at the pharmacy at 19:18:33 PM.
-Patient 73 starting billing process at 19:18:33 PM.
-Patient 66 starting pharmacy process at 19:18:33 PM.
-Patient 73 finishing billing process at 19:28:35 PM.
-Patient 73 waited 19.156509200731914 minutes at the billing room
-Patient 73 arriving at the xray room at 19:28:35 PM.
-Patient 71 starting billing process at 19:28:35 PM.
-Patient 74 finishing consultation with a doctor at 19:28:36 PM.
-Patient 74 waited 1.058232855796814 minutes at the consultation room
-Patient 74 arriving at the billing room at 19:28:36 PM.
-Patient 69 finishing xray process at 19:31:31 PM.
-Patient 69 waited 11.957093866666158 minutes at the xray room
-Patient 69 arriving at the consultation room at 19:31:31 PM.
-Patient 70 starting xray process at 19:31:31 PM.
-Patient 69 starting consultation with a doctor at 19:31:31 PM.
-Patient 66 finishing pharmacy process at 19:33:35 PM.
-Patient 66 waited 0.0 minutes at the pharmacy
-Patient 71 finishing billing process at 19:38:38 PM.
-Patient 71 waited 28.45818599462509 minutes at the billing room
-Patient 71 arriving at the injection at 19:38:38 PM.
-Patient 67 starting billing process at 19:38:38 PM.
-Patient 71 starting injection process at 19:38:38 PM.
-Patient 69 finishing consultation with a doctor at 19:42:34 PM.
-Patient 69 waited 0.0 minutes at the consultation room
-Patient 67 finishing billing process at 19:48:40 PM.
-Patient 67 waited 28.191142745812733 minutes at the billing room
-Patient 67 arriving at the dressing desk at 19:48:40 PM.
-Patient 72 starting billing process at 19:48:40 PM.
-Patient 67 starting dressing process at 19:48:40 PM.
-Patient 71 finishing injection process at 19:38:38 PM.
-Patient 71 waited 0.0 minutes at the injection
-Patient 70 finishing xray process at 19:52:32 PM.
-Patient 70 waited 22.98878676891327 minutes at the xray room
-Patient 70 arriving at the consultation room at 19:52:32 PM.
-Patient 73 starting xray process at 19:52:32 PM.
-Patient 70 starting consultation with a doctor at 19:52:32 PM.
-Patient 72 finishing billing process at 19:58:42 PM.
-Patient 72 waited 31.141174046198525 minutes at the billing room
-Patient 72 arriving at the xray room at 19:58:42 PM.
-Patient 74 starting billing process at 19:58:42 PM.
-Patient 70 finishing consultation with a doctor at 20:03:32 PM.
-Patient 70 waited 0.0 minutes at the consultation room
-Patient 70 arriving at the pharmacy at 20:03:32 PM.
-Patient 70 starting pharmacy process at 20:03:32 PM.
-Patient 67 finishing dressing process at 20:03:41 PM.
-Patient 67 waited 0.0 minutes at the dressing desk
-Patient 74 finishing billing process at 20:08:44 PM.
-Patient 74 waited 30.09035062789917 minutes at the billing room
-Patient 74 arriving at the dressing desk at 20:08:44 PM.
-Patient 74 starting dressing process at 20:08:44 PM.
-Patient 73 finishing xray process at 20:13:33 PM.
-Patient 73 waited 23.950487522284188 minutes at the xray room
-Patient 72 starting xray process at 20:13:33 PM.
-Patient 70 finishing pharmacy process at 20:18:35 PM.
-Patient 70 waited 0.0 minutes at the pharmacy
-Patient 74 finishing dressing process at 20:23:48 PM.
-Patient 74 waited 0.0 minutes at the dressing desk
-Patient 72 finishing xray process at 20:34:36 PM.
-Patient 72 waited 14.861687751611074 minutes at the xray room
-Patient 72 arriving at the consultation room at 20:34:36 PM.
-Patient 72 starting consultation with a doctor at 20:34:36 PM.
-Patient 72 finishing consultation with a doctor at 20:45:37 PM.
-Patient 72 waited 0.0 minutes at the consultation room
+Patient 66 arriving at the consultation room at 17:44:46 PM.
+Patient 52 finishing pharmacy process at 17:46:35 PM.
+Patient 52 waited 0.0 minutes at the pharmacy
+Patient 56 finishing xray process at 17:49:02 PM.
+Patient 56 waited 90.23879206180573 minutes at the xray room
+Patient 43 starting xray process at 17:49:02 PM.
+Patient 44 finishing consultation with a doctor at 17:49:34 PM.
+Patient 44 waited 112.74988735119501 minutes at the consultation room
+Patient 44 arriving at the billing room at 17:49:34 PM.
+Patient 55 starting consultation with a doctor at 17:49:34 PM.
+Patient 41 finishing billing process at 17:51:39 PM.
+Patient 41 waited 13.623952666918436 minutes at the billing room
+Patient 41 arriving at the dressing desk at 17:51:39 PM.
+Patient 44 starting billing process at 17:51:39 PM.
+Patient 41 starting dressing process at 17:51:39 PM.
+Patient 44 finishing billing process at 18:01:41 PM.
+Patient 44 waited 2.0905489325523376 minutes at the billing room
+Patient 44 arriving at the pharmacy at 18:01:41 PM.
+Patient 44 starting pharmacy process at 18:01:41 PM.
+Patient 55 finishing consultation with a doctor at 18:03:37 PM.
+Patient 55 waited 114.78541454871495 minutes at the consultation room
+Patient 55 left the hospital at 18:03:37 PM
+Patient 57 starting consultation with a doctor at 18:03:37 PM.
+Patient 41 finishing dressing process at 18:06:41 PM.
+Patient 41 waited 0.0 minutes at the dressing desk
+Patient 63 finishing scan process at 18:09:41 PM.
+Patient 63 waited 0.0 minutes at the scan
+Patient 43 finishing xray process at 18:10:03 PM.
+Patient 43 waited 99.35187286535898 minutes at the xray room
+Patient 43 left the hospital at 18:10:03 PM
+Patient 48 starting xray process at 18:10:03 PM.
+Patient 44 finishing pharmacy process at 18:16:43 PM.
+Patient 44 waited 0.0 minutes at the pharmacy
+Patient 57 finishing consultation with a doctor at 18:17:41 PM.
+Patient 57 waited 101.78227181037268 minutes at the consultation room
+Patient 39 starting consultation with a doctor at 18:17:41 PM.
+Patient 48 finishing xray process at 18:31:08 PM.
+Patient 48 waited 80.66197297573089 minutes at the xray room
+Patient 62 starting xray process at 18:31:08 PM.
+Patient 39 finishing consultation with a doctor at 18:31:45 PM.
+Patient 39 waited 112.82301406462987 minutes at the consultation room
+Patient 58 starting consultation with a doctor at 18:31:45 PM.
+Patient 58 finishing consultation with a doctor at 18:45:48 PM.
+Patient 58 waited 118.91162731647492 minutes at the consultation room
+Patient 59 starting consultation with a doctor at 18:45:48 PM.
+Patient 62 finishing xray process at 18:52:12 PM.
+Patient 62 waited 71.57285437981288 minutes at the xray room
+Patient 65 starting xray process at 18:52:12 PM.
+Patient 59 finishing consultation with a doctor at 18:59:52 PM.
+Patient 59 waited 125.93447362979254 minutes at the consultation room
+Patient 60 starting consultation with a doctor at 18:59:52 PM.
+Patient 65 finishing xray process at 19:13:16 PM.
+Patient 65 waited 74.45494621992111 minutes at the xray room
+Patient 60 finishing consultation with a doctor at 19:13:52 PM.
+Patient 60 waited 132.96713004112243 minutes at the consultation room
+Patient 61 starting consultation with a doctor at 19:13:52 PM.
+Patient 61 finishing consultation with a doctor at 19:27:56 PM.
+Patient 61 waited 127.07816621859868 minutes at the consultation room
+Patient 64 starting consultation with a doctor at 19:27:56 PM.
+Patient 64 finishing consultation with a doctor at 19:41:56 PM.
+Patient 64 waited 113.14770463705062 minutes at the consultation room
+Patient 66 starting consultation with a doctor at 19:41:56 PM.
+Patient 66 finishing consultation with a doctor at 19:55:57 PM.
+Patient 66 waited 117.17264504432679 minutes at the consultation room
++++++++++ End of simulation +++++++++
