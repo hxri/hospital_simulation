@@ -1,0 +1,8 @@
+Number of patients visited registration: 48
+Number of patients visited consultation: 52
+Number of patients visited scan: 5
+Number of patients visited pharmacy: 24
+Number of patients visited xray: 24
+Number of patients visited billing: 51
+Number of patients visited dressing: 8
+Number of patients visited injection: 5
