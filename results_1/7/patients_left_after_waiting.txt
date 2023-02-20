@@ -1,5 +1,0 @@
-Patient 60 18:52:08 PM
-Patient 66 19:04:04 PM
-Patient 65 19:13:11 PM
-Patient 62 19:34:12 PM
-Patient 63 19:55:16 PM

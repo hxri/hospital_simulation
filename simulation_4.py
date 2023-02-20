@@ -17,12 +17,7 @@ def interval_gen(num_patients):
     x_interp = np.linspace(0, len(BASELINE_ARRIVALS)-1, num_patients)
     y_interp = interp(x_interp)
     y_out = np.interp(y_interp, (0, max(y_data)), (0, max(y_data)))
-
-    var = np.random.randint(120, size=num_patients-2).tolist()
-    var.insert(0, 0)
-    var.insert(num_patients, 0)
-
-    return np.asarray(y_out + var, dtype = 'int')
+    return np.asarray(y_out, dtype = 'int')
 
 # Helper function to generate random consultation decisions
 def consultation_decision():
@@ -66,14 +61,6 @@ def plot_visits(services, visits, path, fname):
     plt.savefig(path + fname)
     plt.show()
 
-def plot_type_visits(types, visits, path, fname):
-    plt.bar(types, visits)
-    plt.ylabel('Visits')
-    plt.xlabel('Types')
-    # plt.title('Avg: {:.2f}, Min: {:.2f}, Max: {:.2f}' .format(np.average(visits), np.min(visits), np.max(visits)))
-    plt.savefig(path + fname)
-    plt.show()
-
 def plot_times(services, time, path, fname):
     plt.bar(services, time)
     plt.ylabel('Time')
@@ -83,11 +70,8 @@ def plot_times(services, time, path, fname):
     plt.show()
 
 # Define patient type
-def p_type(env):
-    if(env.now > datetime.datetime.timestamp(datetime.datetime.combine(datetime.date.today(), datetime.time(10, 15))) and env.now < datetime.datetime.timestamp(datetime.datetime.combine(datetime.date.today(), datetime.time(14, 15)))):
-        return 'IP'
-    else:
-        return random.choices(['NewOP', 'OldOP', 'OldOPScan'], weights=[0.381, 0.4139, 0.2069])[0]
+def p_type():
+    return random.choices(['NewOP', 'OldOP', 'OldOPScan', 'IP'], weights=[0.328, 0.358, 0.179, 0.134])[0]
 
 # Create the patient arrival process
 def patient_arrival(env, doctors, registration, xray, scan, dressing, injection, pharmacy, billing):
@@ -129,7 +113,7 @@ def registration_process(env, registration, patient):
     return total_wait_time
 
 # Create the consultation process
-def consultation(env, doctors, patient):
+def consultation_1(env, doctors_1, patient):
     global end, exit_time, num_consultation, cons_wait_times, cons_service_times
 
     if env.now > datetime.datetime.combine(datetime.date.today(), datetime.time(18, 0)).timestamp():
@@ -137,9 +121,9 @@ def consultation(env, doctors, patient):
         end = 1
         exit_time = env.now
         return 0  # Quit the service if time is greater than 6:00 PM
-
-    num_consultation += 1
-    print("%s arriving at the consultation room at %s." % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
+    
+    num_consultation_1 += 1
+    print("%s arriving at the consultation 1 room at %s." % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
     arrival_time = env.now
     processing_time = CONSULTATION_TIME + np.random.uniform(0,5)
 
@@ -150,15 +134,48 @@ def consultation(env, doctors, patient):
     with doctors.request() as req:
         yield req
         start_time = env.now
-        print("%s starting consultation with a doctor at %s." % (patient, datetime.datetime.fromtimestamp(start_time).strftime('%X %p')), file=f)
+        print("%s starting consultation with a doctor 1 at %s." % (patient, datetime.datetime.fromtimestamp(start_time).strftime('%X %p')), file=f)
         yield env.timeout(processing_time)
         finish_time = env.now
-        print("%s finishing consultation with a doctor at %s." % (patient, datetime.datetime.fromtimestamp(finish_time).strftime('%X %p')), file=f)
+        print("%s finishing consultation with a doctor 1 at %s." % (patient, datetime.datetime.fromtimestamp(finish_time).strftime('%X %p')), file=f)
     total_wait_time = (start_time - arrival_time)/60
-    print("%s waited %s minutes at the consultation room" % (patient, total_wait_time), file=f)
+    print("%s waited %s minutes at the consultation 1 room" % (patient, total_wait_time), file=f)
     cons_wait_times.append(total_wait_time)
     cons_service_times.append(processing_time)
-    flow[patient].update({'Consultation': {'arrival': datetime.datetime.fromtimestamp(arrival_time).strftime('%X %p'), 'start': datetime.datetime.fromtimestamp(start_time).strftime('%X %p'), 'finish': datetime.datetime.fromtimestamp(finish_time).strftime('%X %p'), 'wait': str(datetime.timedelta(minutes=total_wait_time))}})
+    flow[patient].update({'Consultation 1': {'arrival': datetime.datetime.fromtimestamp(arrival_time).strftime('%X %p'), 'start': datetime.datetime.fromtimestamp(start_time).strftime('%X %p'), 'finish': datetime.datetime.fromtimestamp(finish_time).strftime('%X %p'), 'wait': str(datetime.timedelta(minutes=total_wait_time))}})
+    return total_wait_time
+
+# Create the consultation process
+def consultation_2(env, doctors_2, patient):
+    global end, exit_time, num_consultation, cons_wait_times, cons_service_times
+
+    if env.now > datetime.datetime.combine(datetime.date.today(), datetime.time(18, 0)).timestamp():
+        print("%s left the hospital at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
+        end = 1
+        exit_time = env.now
+        return 0  # Quit the service if time is greater than 6:00 PM
+    
+    num_consultation_2 += 1
+    print("%s arriving at the consultation 2 room at %s." % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
+    arrival_time = env.now
+    processing_time = CONSULTATION_TIME + np.random.uniform(0,5)
+
+    # Wait until 8:00 AM
+    while env.now < (datetime.datetime.combine(datetime.date.today(), SERVICE_START_TIME).timestamp()):
+        yield env.timeout(60)  # Check every second
+
+    with doctors.request() as req:
+        yield req
+        start_time = env.now
+        print("%s starting consultation with a doctor 2 at %s." % (patient, datetime.datetime.fromtimestamp(start_time).strftime('%X %p')), file=f)
+        yield env.timeout(processing_time)
+        finish_time = env.now
+        print("%s finishing consultation with a doctor 2 at %s." % (patient, datetime.datetime.fromtimestamp(finish_time).strftime('%X %p')), file=f)
+    total_wait_time = (start_time - arrival_time)/60
+    print("%s waited %s minutes at the consultation 2 room" % (patient, total_wait_time), file=f)
+    cons_wait_times.append(total_wait_time)
+    cons_service_times.append(processing_time)
+    flow[patient].update({'Consultation 2': {'arrival': datetime.datetime.fromtimestamp(arrival_time).strftime('%X %p'), 'start': datetime.datetime.fromtimestamp(start_time).strftime('%X %p'), 'finish': datetime.datetime.fromtimestamp(finish_time).strftime('%X %p'), 'wait': str(datetime.timedelta(minutes=total_wait_time))}})
     return total_wait_time
 
 # Create the pharmacy process
@@ -358,8 +375,7 @@ def injection_process(env, injection, patient):
 # Define patient flow
 def patient_flow(env, doctors, registration, xray, scan, dressing, injection, pharmacy, billing, patient):
     global end, exit_time
-    patient_type = p_type(env)
-    global ip, new_op, old_op, old_op_scan, ip_visit_time
+    patient_type = p_type()
     total_wait_time = 0
     s_time = env.now
     end = 0
@@ -370,17 +386,22 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
     d1 = OldOP_decision()
     d2 = oldOP_scan_decision()
     if patient_type == 'NewOP':
-        new_op += 1
         if(d0 == 0):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
                 total_wait_time += yield env.process(xray_process(env, xray, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -394,7 +415,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d0 == 2):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -406,7 +430,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d0 == 3):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -416,17 +443,26 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d0 == 4):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
                 total_wait_time += yield env.process(xray_process(env, xray, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
         elif(d0 == 5):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -434,7 +470,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d0 == 6):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -442,7 +481,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d0 == 7):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -450,7 +492,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d0 == 8):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -458,7 +503,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d0 == 9):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -466,7 +514,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d0 == 10):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -478,11 +529,13 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
             
 
     if patient_type == 'OldOP':
-        old_op += 1
         if(d1 == 0):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -496,13 +549,19 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d1 == 1):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
                 total_wait_time += yield env.process(xray_process(env, xray, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -510,7 +569,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d1 == 2):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -522,7 +584,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d1 == 3):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -532,11 +597,17 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d1 == 4):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
         elif(d1 == 5):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -544,7 +615,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d1 == 6):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -552,7 +626,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d1 == 7):
             total_wait_time += yield env.process(registration_process(env, registration, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -560,8 +637,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
         elif(d1 == 8):
             # Incomplete flow
             total_wait_time += yield env.process(registration_process(env, registration, patient))
-            if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+            if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+            else:
+                total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             print("%s left the hospital at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
         elif(d1 == 9):
             # Incomplete flow
@@ -569,7 +648,6 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
             print("%s left the hospital at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=f)
     
     elif patient_type == 'OldOPScan':
-        old_op_scan += 1
         total_wait_time += yield env.process(billing_process(env, billing, patient))
         if(d2 == 0):
             if(end == 0):
@@ -584,7 +662,10 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
             if(end == 0):
                 total_wait_time += yield env.process(xray_process(env, xray, patient))
             if(end == 0):
-                total_wait_time += yield env.process(consultation(env, doctors, patient))
+                if(env.now < (datetime.datetime.combine(datetime.date.today(), datetime.time(13, 0)).timestamp())):
+                    total_wait_time += yield env.process(consultation_1(env, doctors, patient))
+                else:
+                    total_wait_time += yield env.process(consultation_2(env, doctors, patient))
             if(end == 0):
                 total_wait_time += yield env.process(billing_process(env, billing, patient))
             if(end == 0):
@@ -604,8 +685,6 @@ def patient_flow(env, doctors, registration, xray, scan, dressing, injection, ph
                 total_wait_time += yield env.process(scan_process(env, scan, patient))
     
     elif patient_type == 'IP':
-        ip += 1
-        print("%s arrived at %s" % (patient, datetime.datetime.fromtimestamp(env.now).strftime('%X %p')), file=fip)
         if(ip_decision == 1):
             if(end == 0):
                 total_wait_time += yield env.process(scan_process(env, scan, patient))
@@ -638,7 +717,8 @@ for i in range(len(init.index)):
     NUM_REGISTRATION_COUNTERS = init['NUM_REGISTRATION_COUNTERS'][i]
     REGISTRATION_TIME = (init['REGISTRATION_TIME'][i])*60 # seconds
 
-    NUM_DOCTORS = init['NUM_DOCTORS'][i]
+    NUM_DOCTORS_1 = init['NUM_DOCTORS_1'][i]
+    NUM_DOCTORS_2 = init['NUM_DOCTORS_2'][i]
     CONSULTATION_TIME = init['CONSULTATION_TIME'][i]*60 # seconds
 
     NUM_PHARMACY_COUNTERS = init['NUM_PHARMACY_COUNTERS'][i]
@@ -664,7 +744,10 @@ for i in range(len(init.index)):
     env = simpy.Environment(initial_time = datetime.datetime.combine(datetime.date.today(), START_TIME).timestamp())
 
     # Create the Doctor resource
-    doctors = simpy.PriorityResource(env, capacity=NUM_DOCTORS)
+    doctors_1 = simpy.PriorityResource(env, capacity=NUM_DOCTORS_1)
+
+    # Create the Doctor resource
+    doctors_2 = simpy.PriorityResource(env, capacity=NUM_DOCTORS_2)
 
     # Create the registration resource
     registration = simpy.PriorityResource(env, capacity=NUM_REGISTRATION_COUNTERS)
@@ -696,7 +779,8 @@ for i in range(len(init.index)):
 
     # Define counters for each service
     num_registration = 0
-    num_consultation = 0
+    num_consultation_1 = 0
+    num_consultation_2 = 0
     num_scan = 0
     num_pharmacy = 0
     num_xray = 0
@@ -705,7 +789,8 @@ for i in range(len(init.index)):
     num_injection = 0
 
     reg_wait_times = []
-    cons_wait_times = []
+    cons_1_wait_times = []
+    cons_2_wait_times = []
     phar_wait_times = []
     dress_wait_times = []
     xray_wait_times = []
@@ -714,7 +799,8 @@ for i in range(len(init.index)):
     inj_wait_times = []
 
     reg_service_times = []
-    cons_service_times = []
+    cons_1_service_times = []
+    cons_2_service_times = []
     phar_service_times = []
     dress_service_times = []
     xray_service_times = []
@@ -725,22 +811,13 @@ for i in range(len(init.index)):
     left_patients = []
     exit_time = 0
 
-    ip = 0
-    old_op = 0
-    old_op_scan = 0
-    new_op = 0
-
-    ip_visit_time = []
-
-    path = 'results_3/%s/'%i
+    path = 'results_4/%s/'%i
     os.makedirs(path, exist_ok=True)
 
     f = open(path + "logs.txt", "w")
-    fip = open(path + "ip_visit_time.txt", "w")
-    env.process(patient_arrival(env, doctors, registration, xray, scan, dressing, injection, pharmacy, billing))
+    env.process(patient_arrival(env, doctors_1, doctors_2, registration, xray, scan, dressing, injection, pharmacy, billing))
     env.run()
     print("+++++++++ End of simulation +++++++++", file=f)
-    fip.close()
     f.close()
 
     # Plot wait times and proe=cessing times
@@ -750,7 +827,8 @@ for i in range(len(init.index)):
     # Print the number of patients visited each service
     f2 = open(path + "frequency.txt", "w")
     print("Number of patients visited registration: %d" %num_registration, file=f2)
-    print("Number of patients visited consultation: %d" %num_consultation, file=f2)
+    print("Number of patients visited consultation 1: %d" %num_consultation_1, file=f2)
+    print("Number of patients visited consultation 2: %d" %num_consultation_2, file=f2)
     print("Number of patients visited scan: %d" %num_scan, file=f2)
     print("Number of patients visited pharmacy: %d" %num_pharmacy, file=f2)
     print("Number of patients visited xray: %d" %num_xray, file=f2)
@@ -759,23 +837,10 @@ for i in range(len(init.index)):
     print("Number of patients visited injection: %d" %num_injection, file=f2)
     f2.close()
 
-    services = ['R', 'C', 'B', 'D', 'S', 'X', 'I', 'P']
-    visits = [num_registration, num_consultation, num_billing, num_dressing, num_scan, num_xray, num_injection, num_pharmacy]
+    services = ['R', 'C1', 'C2', 'B', 'D', 'S', 'X', 'I', 'P']
+    visits = [num_registration, num_consultation_1, num_consultation_2, num_billing, num_dressing, num_scan, num_xray, num_injection, num_pharmacy]
     plot_visits(services, visits, path, 'num_visits_per_service.png')
     np.savetxt(path + 'visits_per_service.txt', visits)
-
-    # Print patient type frequency
-    f3 = open(path + "patient_type_frequency.txt", "w")
-    print("Number of IP patients visited: %d" %ip, file=f3)
-    print("Number of New OP patients visited: %d" %new_op, file=f3)
-    print("Number of Old OP patients visited: %d" %old_op, file=f3)
-    print("Number of Old OP Scan patients visited: %d" %old_op_scan, file=f3)
-    f3.close()
-
-    types = ['IP', 'NOP', 'OOP', 'OOPS']
-    visits = [ip, new_op, old_op, old_op_scan]
-    plot_type_visits(types, visits, path, 'num_visits_per_type.png')
-    np.savetxt(path + 'visits_per_type', visits)
 
     with open(path + 'flow_data.json', 'w') as fp:
         json.dump(flow, fp)
@@ -791,7 +856,8 @@ for i in range(len(init.index)):
 
     def avg_times():
         wait_time_per_process = [reg_wait_times,
-                                cons_wait_times,
+                                cons_1_wait_times,
+                                cons_2_wait_times,
                                 phar_wait_times,
                                 dress_wait_times,
                                 xray_wait_times,
@@ -800,7 +866,8 @@ for i in range(len(init.index)):
                                 inj_wait_times,]
 
         service_time_per_process = [reg_service_times,
-                                    cons_service_times,
+                                    cons_1_service_times,
+                                    cons_2_service_times,
                                     phar_service_times,
                                     dress_service_times,
                                     xray_service_times,
@@ -818,7 +885,7 @@ for i in range(len(init.index)):
     # Plot Wait times and service times
     wait_time_per_process, service_time_per_process = avg_times()
 
-    services = ['R', 'C', 'P', 'D', 'X', 'S', 'B', 'I']
+    services = ['R', 'C1', 'C2', 'P', 'D', 'X', 'S', 'B', 'I']
     waits = wait_time_per_process
     service = service_time_per_process
     np.savetxt(path + 'wait_times_per_process.txt', waits)
