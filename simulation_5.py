@@ -371,7 +371,7 @@ def injection_process(env, injection, patient):
         print("%s starting injection process at %s." % (patient, datetime.datetime.fromtimestamp(start_time).strftime('%X %p')), file=f)
         yield env.timeout(processing_time)
         finish_time = env.now
-        print("%s finishing injection process at %s." % (patient, datetime.datetime.fromtimestamp(start_time).strftime('%X %p')), file=f)
+        print("%s finishing injection process at %s." % (patient, datetime.datetime.fromtimestamp(finish_time).strftime('%X %p')), file=f)
     total_wait_time = (start_time - arrival_time)/60
     print("%s waited %s minutes at the injection" % (patient, total_wait_time), file=f)
     inj_wait_times.append(total_wait_time)
